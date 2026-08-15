@@ -80,3 +80,4 @@ timestamp,message
 2026-08-15T15:59:25.592023+00:00,chore(workworkdo): bump workdo radar
 2026-08-15T16:11:57.871060+00:00,chore(workworkdo): rebuild commit dashboard
 2026-08-15T16:42:36.979141+00:00,docs: update contribution-grid notes
+2026-08-15T17:09:02.196071+00:00,feat: bump grid thresholds for burst days
