@@ -68,10 +68,4 @@ timestamp,message
 2026-08-14T12:00:00+00:00,chore(workworkdo): update feed cache
 2026-08-15T12:00:00+00:00,chore(workworkdo): sync remote snapshot
 2026-08-16T12:00:00+00:00,chore(workworkdo): regenerate daily grid
-2026-08-16T10:37:31.916266+00:00,refactor: tidy up dashboard assets
-2026-08-16T11:54:39.177473+00:00,chore(workworkdo): refresh metadata
-2026-08-16T14:09:38.705021+00:00,chore(workworkdo): bump workdo radar
-2026-08-16T14:13:47.422012+00:00,chore(workworkdo): refresh activity snapshot
-2026-08-16T16:08:21.520310+00:00,feat: bump grid thresholds for burst days
-2026-08-16T16:15:49.406576+00:00,docs: update contribution-grid notes
-2026-08-16T18:55:14.090365+00:00,chore(workworkdo): update dashboard assets
+2026-08-17T12:00:00+00:00,chore(workworkdo): bump workdo radar
