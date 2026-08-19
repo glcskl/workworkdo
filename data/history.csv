@@ -79,3 +79,4 @@ timestamp,message
 2026-08-19T11:33:54.266702+00:00,refactor: tidy up dashboard assets
 2026-08-19T12:31:01.252713+00:00,feat: bump grid thresholds for burst days
 2026-08-19T13:30:52.171398+00:00,fix(ci): avoid redundant workflow runs
+2026-08-19T15:02:07.042712+00:00,chore(workworkdo): bump workdo radar
