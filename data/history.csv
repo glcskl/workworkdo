@@ -88,3 +88,4 @@ timestamp,message
 2026-08-31T18:09:04.395155+00:00,chore(workworkdo): rebuild commit dashboard
 2026-08-31T18:26:53.683392+00:00,chore(workworkdo): update feed cache
 2026-08-31T18:30:57.763491+00:00,chore(workworkdo): refresh activity snapshot
+2026-08-31T21:17:55.271581+00:00,refactor: tidy up dashboard assets
