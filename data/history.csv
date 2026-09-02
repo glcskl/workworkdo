@@ -84,7 +84,4 @@ timestamp,message
 2026-08-30T12:00:00+00:00,chore(workworkdo): update feed cache
 2026-08-31T12:00:00+00:00,chore(workworkdo): sync remote snapshot
 2026-09-01T12:00:00+00:00,chore(workworkdo): regenerate daily grid
-2026-09-01T14:14:49.702691+00:00,chore(workworkdo): rebuild commit dashboard
-2026-09-01T18:06:50.992794+00:00,chore(workworkdo): sync remote snapshot
-2026-09-01T21:44:41.936556+00:00,fix(ci): avoid redundant workflow runs
-2026-09-01T22:52:55.075565+00:00,feat: bump grid thresholds for burst days
+2026-09-02T12:00:00+00:00,chore(workworkdo): bump workdo radar
