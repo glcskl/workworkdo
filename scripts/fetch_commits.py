@@ -22,6 +22,24 @@ AUTHOR_EMAIL = os.environ.get(
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+STYLES = """
+<style>
+ body { font-family: -apple-system, system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; color: #222; }
+ h1 { font-size: 22px; } h2 { font-size: 16px; margin-top: 32px; }
+ .grid { display: flex; gap: 3px; }
+ .col { display: flex; flex-direction: column; gap: 3px; }
+ .cell { width: 12px; height: 12px; border-radius: 2px; background: #ebedf0; }
+ .cell.l1 { background: #c6e48b; } .cell.l2 { background: #7bc96f; }
+ .cell.l3 { background: #196c2e; } .cell.l4 { background: #0a4d1e; }
+ ol { list-style: none; padding: 0; }
+ li { padding: 6px 0; border-bottom: 1px solid #eee; font-size: 14px; }
+ code { color: #444; margin-right: 8px; } time { color: #888; margin-right: 8px; }
+ .msg { color: #111; } em { color: #999; }
+ table { border-collapse: collapse; } td, th { border: 1px solid #ddd; padding: 6px 12px; text-align: left; }
+ .meta { color: #777; font-size: 13px; }
+</style>
+"""
+
 
 def api(url: str):
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
@@ -122,24 +140,11 @@ def main():
 
     html = f"""<!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
-<title>Commit Radar — {TARGET}</title>
-<style>
- body {{ font-family: -apple-system, system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; color: #222; }}
- h1 {{ font-size: 22px; }} h2 {{ font-size: 16px; margin-top: 32px; }}
- .grid {{ display: flex; gap: 3px; }}
- .col {{ display: flex; flex-direction: column; gap: 3px; }}
- .cell {{ width: 12px; height: 12px; border-radius: 2px; background: #ebedf0; }}
- .cell.l1 {{ background: #c6e48b; }} .cell.l2 {{ background: #7bc96f; }}
- .cell.l3 {{ background: #196c2e; }} .cell.l4 {{ background: #0a4d1e; }}
- ol {{ list-style: none; padding: 0; }}
- li {{ padding: 6px 0; border-bottom: 1px solid #eee; font-size: 14px; }}
- code {{ color: #444; margin-right: 8px; }} time {{ color: #888; margin-right: 8px; }}
- .msg {{ color: #111; }} em {{ color: #999; }}
- table {{ border-collapse: collapse; }} td, th {{ border: 1px solid #ddd; padding: 6px 12px; text-align: left; }}
- .meta {{ color: #777; font-size: 13px; }}
-</style></head><body>
+<title>Commit Radar — {TARGET}</title>"""
+    html += STYLES
+    html += f"""</head><body>
 <h1>Commit Radar</h1>
-<p class="meta">Источник: <code>{TARGET}</code> · последнее обновление: <code>{datetime.utcnow().isoformat(timespec='seconds')}Z</code> · коммитов: <code>{len(commits)}</code></p>
+<p class="meta">Источник: <code>{TARGET}</code> · коммитов: <code>{len(commits)}</code></p>
 <h2>Активность (последние ~23 недели)</h2>
 {grid_html}
 <h2>История коммитов</h2>
@@ -148,8 +153,11 @@ def main():
 <table><tr><th>Автор</th><th>Коммитов</th></tr>{authors_rows}</table>
 </body></html>"""
 
+    # NOTE: deliberately no "updated" timestamp in the committed files, so a
+    # rebuild with identical data produces no diff -> no contribution on days
+    # when nothing changed. Only real changes to history.csv / commits push.
     with open(os.path.join(ROOT, "data", "commits.json"), "w") as f:
-        json.dump({"source": TARGET, "updated": datetime.utcnow().isoformat() + "Z", "count": len(commits), "commits": commits}, f, ensure_ascii=False, indent=2)
+        json.dump({"source": TARGET, "count": len(commits), "commits": commits}, f, ensure_ascii=False, indent=2)
 
     with open(os.path.join(ROOT, "_site", "index.html"), "w") as f:
         f.write(html)
