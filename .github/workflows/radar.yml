@@ -1,0 +1,60 @@
+name: refresh-radar
+
+on:
+  schedule:
+    # Runs daily at a pseudo-random-ish hour (02:17 UTC) -> natural pattern with gap days
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    # Keep the matrix in sync with labels in scripts/update_history.py
+    strategy:
+      matrix:
+        include:
+          - label: "Maintain"
+            prob: "0.85"
+            msg: "chore(radar): refresh activity snapshot"
+          - label: "Wire"
+            prob: "0.70"
+            msg: "chore(radar): rebuild commit dashboard"
+          - label: "Bump"
+            prob: "0.40"
+            msg: "chore(radar): update feed cache"
+          - label: "Sync"
+            prob: "0.20"
+            msg: "chore(radar): sync remote snapshot"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Fetch commits and rebuild dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_DASH_TOKEN }}
+          TARGET_REPO: ykr0p/ykr0p-new_arch_workdo_w
+          RADAR_AUTHOR_NAME: glcskl
+          RADAR_AUTHOR_EMAIL: 188385208+glcskl@users.noreply.github.com
+        run: python3 scripts/fetch_commits.py
+
+      - name: Record an activity entry with randomized probability
+        env:
+          PROB: ${{ matrix.prob }}
+          MSG: ${{ matrix.msg }}
+        run: python3 scripts/update_history.py "$PROB" "$MSG"
+
+      - name: Commit and push
+        run: |
+          git config user.name "glcskl"
+          git config user.email "188385208+glcskl@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore(radar): refresh daily snapshot [$(date -u +%F)]"
+            git push
+          else
+            echo "no changes; nothing to push"
+          fi

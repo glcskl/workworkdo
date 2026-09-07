@@ -1,0 +1,3469 @@
+{
+  "source": "ykr0p/ykr0p-new_arch_workdo_w",
+  "updated": "2026-09-07T17:56:29.320374Z",
+  "count": 577,
+  "commits": [
+    {
+      "sha": "e0162cb179",
+      "date": "2026-09-07T13:14:01Z",
+      "message": "docs(suggestions): document shared suggestions service and normalization",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d3a67e6bd4",
+      "date": "2026-09-07T13:13:56Z",
+      "message": "refactor(suggestions): share autocomplete-suggestion logic across verticals",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "10b5c1531b",
+      "date": "2026-09-07T12:54:01Z",
+      "message": "docs(security): document checkbox filters, terminate dialog and select updates",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ef7d272908",
+      "date": "2026-09-07T12:53:50Z",
+      "message": "refactor(security): use user silhouette for employee photo placeholders",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ed6c27fda8",
+      "date": "2026-09-07T12:53:46Z",
+      "message": "style(ui): move select checkmark to the right and migrate audit-log filters to radix",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6086ba142b",
+      "date": "2026-09-07T12:53:40Z",
+      "message": "feat(security): replace employee terminate page with dialog supporting termination date",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f1f19362b5",
+      "date": "2026-09-07T12:53:22Z",
+      "message": "feat(security): add multi-value brigade/position and tag filters",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "339f545741",
+      "date": "2026-09-07T12:52:56Z",
+      "message": "feat(ui): add checkbox-dropdown multi-select component",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0af6a1b6c3",
+      "date": "2026-09-07T09:35:13Z",
+      "message": "refactor(security): move shift-form dialog into verticals",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "23587c3a5f",
+      "date": "2026-09-07T09:34:52Z",
+      "message": "refactor(security): move object-to-clients cache path into registry",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "032078a99d",
+      "date": "2026-09-07T09:34:47Z",
+      "message": "refactor(security): use afterMutation for incident cache invalidation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d7dc0fd95f",
+      "date": "2026-09-07T09:34:42Z",
+      "message": "refactor(security): unify date-to-local helpers in shared lib",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bd6c12239b",
+      "date": "2026-09-06T18:44:09Z",
+      "message": "docs(security): update form migration status for time-record",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "23bad74c69",
+      "date": "2026-09-06T18:44:04Z",
+      "message": "refactor(security): rewire time-records page to use new form from verticals",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e1a907cea1",
+      "date": "2026-09-06T18:43:57Z",
+      "message": "feat(security): implement time-record modal form with react-hook-form and zod",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "17f75ad26b",
+      "date": "2026-09-06T18:43:48Z",
+      "message": "refactor(security): register cache invalidation for time-records",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "12611e8e9f",
+      "date": "2026-09-06T18:43:39Z",
+      "message": "feat(security): add time-record form schema with zod and type-safe inputs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fb17994882",
+      "date": "2026-09-06T18:32:22Z",
+      "message": "docs(security): update form migration status for instruction-log",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7acdb57b7d",
+      "date": "2026-09-06T18:32:09Z",
+      "message": "refactor(security): rewire instructions page to use new InstructionLogDialog",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fac7b202fb",
+      "date": "2026-09-06T18:31:53Z",
+      "message": "feat(security): implement instruction-log modal form with react-hook-form and zod",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c947595dcf",
+      "date": "2026-09-06T18:31:44Z",
+      "message": "refactor(security): register cache invalidation for instruction-logs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "28453a725a",
+      "date": "2026-09-06T18:31:34Z",
+      "message": "feat(security): add instruction-log form schema with zod and type-safe inputs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f70ae2a0a5",
+      "date": "2026-09-06T18:01:42Z",
+      "message": "docs(security): update form migration status for incident and remaining legacy forms",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b3c4012664",
+      "date": "2026-09-06T18:01:37Z",
+      "message": "refactor(security): render new and edit incident pages through shared IncidentForm",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "23d5e4c9ba",
+      "date": "2026-09-06T18:01:33Z",
+      "message": "feat(security): implement incident form with react-hook-form and zod",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "54d489db79",
+      "date": "2026-09-06T18:01:28Z",
+      "message": "refactor(security): register cache invalidation for incidents",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6cfedd2fc2",
+      "date": "2026-09-06T18:01:23Z",
+      "message": "feat(security): add incident form schema with zod and type-safe inputs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cd01178a71",
+      "date": "2026-09-06T17:30:22Z",
+      "message": "fix(security): add screen-reader dialog descriptions to shift modal and card; document form migration status",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "387992ba84",
+      "date": "2026-09-06T16:40:47Z",
+      "message": "feat(security): migrate contract form to react-hook-form with zod contract",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bbd0800b2e",
+      "date": "2026-09-06T16:40:41Z",
+      "message": "feat(security): migrate equipment form to react-hook-form with zod contract",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "01d5051ff5",
+      "date": "2026-09-06T16:40:34Z",
+      "message": "feat(security): migrate shift form to react-hook-form with zod contract",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "952729ab15",
+      "date": "2026-09-06T16:40:23Z",
+      "message": "refactor(security): register cache invalidations for shift, equipment and contract",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ab54a13830",
+      "date": "2026-09-06T16:40:18Z",
+      "message": "fix(security): decode mojibake russian text in instruction-log dialog and audit enrichment",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0995437f1e",
+      "date": "2026-09-06T14:48:50Z",
+      "message": "fix(security): compact notes section header (drop icon and subtitle)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7b229c7eea",
+      "date": "2026-09-06T14:48:50Z",
+      "message": "fix(security): restore two-column card layout for post form",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "38b793803e",
+      "date": "2026-09-06T14:48:44Z",
+      "message": "feat(security): migrate brigade form to react-hook-form with zod contract",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "11994d4c68",
+      "date": "2026-09-06T14:07:32Z",
+      "message": "fix(security): stack post form sections in a single full-width column",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9ec7c343e1",
+      "date": "2026-09-06T14:07:26Z",
+      "message": "feat(security): migrate employee form to react-hook-form with zod contract",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "13f9aef376",
+      "date": "2026-09-06T13:42:07Z",
+      "message": "feat(security): migrate post form to react-hook-form with zod contract",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "824499bd40",
+      "date": "2026-09-06T13:41:59Z",
+      "message": "feat(security): migrate object form to react-hook-form with zod contract",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a5d38348b8",
+      "date": "2026-09-06T13:08:45Z",
+      "message": "refactor(security): rename entity modules to kebab-case file naming",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5096b4c5de",
+      "date": "2026-09-06T13:08:25Z",
+      "message": "feat(security): migrate client form to react-hook-form with zod contract",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5f73337ddc",
+      "date": "2026-09-06T13:08:09Z",
+      "message": "refactor(security): add cache-invalidation and audit afterMutation helpers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ce7fd7cc4d",
+      "date": "2026-09-05T21:31:43Z",
+      "message": "docs: drop new-guard-dialog from src/components/security tree",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "41eb530cde",
+      "date": "2026-09-05T21:31:39Z",
+      "message": "refactor(security): replace legacy guard wrappers with employee actions and drop guard dialog",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "66d550aae9",
+      "date": "2026-09-05T21:21:43Z",
+      "message": "docs: document vertical components layer, entity recents and component conventions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2932b6ad39",
+      "date": "2026-09-05T21:21:39Z",
+      "message": "chore(ui): remove unused ScrollToTop component",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6687c3b97b",
+      "date": "2026-09-05T21:21:35Z",
+      "message": "refactor(security): move employee photo and license inputs to vertical components layer",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c62dbc011a",
+      "date": "2026-09-05T21:21:12Z",
+      "message": "refactor(security): move forms and quick-create dialogs to vertical components layer",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7bb46622bc",
+      "date": "2026-09-05T20:53:32Z",
+      "message": "feat(security): reuse full BrigadeForm for brigade creation in employee form",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6406a51762",
+      "date": "2026-09-05T20:53:27Z",
+      "message": "refactor(security): move BrigadeForm to vertical components layer",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "508a936193",
+      "date": "2026-09-05T20:29:38Z",
+      "message": "feat(ui): suggest recently selected entities in search selects",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "efdd4c2d5c",
+      "date": "2026-09-05T20:29:33Z",
+      "message": "refactor(security): use BrigadeSelect for brigade field in employee form",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "144054448c",
+      "date": "2026-09-05T20:29:29Z",
+      "message": "fix(security): exclude archived brigades from BrigadeSelect search",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "46ed5b655b",
+      "date": "2026-09-04T21:24:32Z",
+      "message": "feat(finance): income/expense ledger feeding auto statements",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a374f24d08",
+      "date": "2026-09-04T21:10:46Z",
+      "message": "feat(finance): shared tax breakdown panel in security finance",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a0f66535ff",
+      "date": "2026-09-04T21:10:36Z",
+      "message": "feat(taxation): add country-driven finance calc engine",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "32fc69aeb6",
+      "date": "2026-09-04T20:35:43Z",
+      "message": "docs(tenant): document migration sync check and per-tenant coverage",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "323afe4962",
+      "date": "2026-09-04T20:35:39Z",
+      "message": "fix(platform): drop tenant schema on failed business creation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "df68cfd5f7",
+      "date": "2026-09-04T20:35:35Z",
+      "message": "feat(tenant): template-migration sync check with per-tenant coverage",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2b8b7710b4",
+      "date": "2026-09-04T20:35:31Z",
+      "message": "fix(taxation): country-driven payroll defaults; rename ownerNdflRate",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cc995a148b",
+      "date": "2026-09-04T18:52:50Z",
+      "message": "refactor(tenant): make baseline skip legacy tenants with migration history",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ebf7f85ad0",
+      "date": "2026-09-04T18:47:15Z",
+      "message": "docs(tenant): document template migration baseline",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c5999f9a59",
+      "date": "2026-09-04T18:47:01Z",
+      "message": "fix(tenant): baseline migrations when provisioning from template",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1fed44b685",
+      "date": "2026-09-04T18:27:18Z",
+      "message": "docs(taxation): document flexible tax regime system and TaxSettings removal",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "08f87dbb23",
+      "date": "2026-09-04T18:20:35Z",
+      "message": "chore(taxation): remove legacy TaxSettings table and code",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "889faa9d0a",
+      "date": "2026-09-04T18:20:08Z",
+      "message": "feat(taxation): add flexible multi-country tax regime system",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9f023c577d",
+      "date": "2026-09-04T16:18:53Z",
+      "message": "chore(security): remove dead brigade export handler and unused prop",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3d7ee8f703",
+      "date": "2026-09-03T19:33:09Z",
+      "message": "chore(scripts): remove unused variables in dev and tenant scripts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4db06f26c4",
+      "date": "2026-09-03T19:33:08Z",
+      "message": "chore(components): remove unused variables in shared selects and blog",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5048d13624",
+      "date": "2026-09-03T19:32:55Z",
+      "message": "chore(beauty): remove unused variables in dashboard pages and api",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9c7f242802",
+      "date": "2026-09-03T19:32:48Z",
+      "message": "chore(yacht): remove unused variables in dashboard pages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "511be8c375",
+      "date": "2026-09-03T19:32:43Z",
+      "message": "chore(security): remove unused variables in dashboard pages and services",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f416e17250",
+      "date": "2026-09-03T19:32:28Z",
+      "message": "chore(auth): remove unused variables in auth flows",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cd216c5217",
+      "date": "2026-09-03T19:32:24Z",
+      "message": "docs(landing): document unified vertical resolution and rendering",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ea6510ae73",
+      "date": "2026-09-03T19:01:59Z",
+      "message": "feat(auth): hint users to check spam folder when waiting for a code",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4567065014",
+      "date": "2026-09-03T19:01:53Z",
+      "message": "refactor(register): drop businessName/name fields duplicated in company settings",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "55575b965b",
+      "date": "2026-09-03T18:37:07Z",
+      "message": "refactor(landing): unify current-vertical resolution in one hook",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cc11aed971",
+      "date": "2026-09-03T16:42:30Z",
+      "message": "refactor(landing): unify all vertical landings on FeaturedVertical",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d16f41a929",
+      "date": "2026-09-03T16:42:18Z",
+      "message": "feat(landing): add featured vertical fields and accent theming to CONTENT",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2b492081a2",
+      "date": "2026-09-03T14:15:20Z",
+      "message": "feat(dashboard): gate beauty/yacht app routes behind feature flags",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "85c9742798",
+      "date": "2026-09-03T14:15:14Z",
+      "message": "refactor(landing): deduplicate easing REVEAL constant into single module",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "193485ac6a",
+      "date": "2026-09-02T07:57:53Z",
+      "message": "perf(middleware): skip rate-limit on static pages to cut cold start by ~1.5 s",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "31a487a460",
+      "date": "2026-09-02T07:31:38Z",
+      "message": "perf(landing): make LCP hero text visible without JS",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2b41d54b9c",
+      "date": "2026-09-02T07:22:11Z",
+      "message": "perf(assets): shrink logo and favicon for faster LCP",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ba6b05e9a4",
+      "date": "2026-09-02T07:11:16Z",
+      "message": "docs: document vertical feature-flag semantics and catalog rules",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5fb2e270d9",
+      "date": "2026-09-02T07:11:12Z",
+      "message": "refactor(config): centralize vertical feature-flag reads with opt-in/opt-out semantics",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "769675ca28",
+      "date": "2026-09-02T07:11:08Z",
+      "message": "refactor(landing): derive header and register vertical lists from VERTICALS catalog",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e9db8b2c1a",
+      "date": "2026-09-01T20:50:15Z",
+      "message": "Update README.md _ fixed deploy",
+      "author": "Maxim_Proskochilov"
+    },
+    {
+      "sha": "fb4324e8b8",
+      "date": "2026-09-01T20:44:39Z",
+      "message": "chore: trigger vercel redeploy",
+      "author": "gleb"
+    },
+    {
+      "sha": "0e0bf2c4bb",
+      "date": "2026-09-01T20:35:06Z",
+      "message": "feat(marketing): brand gradients, honest content, animations, vertical feature flags",
+      "author": "gleb"
+    },
+    {
+      "sha": "75f48c10e6",
+      "date": "2026-09-01T18:48:59Z",
+      "message": "chore: drop generated next-env.d.ts noise after merge",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "62a3009eac",
+      "date": "2026-09-01T18:13:05Z",
+      "message": "feat(landing): apply approved marketing design to legal pages",
+      "author": "глеб"
+    },
+    {
+      "sha": "6a2ce6b89e",
+      "date": "2026-09-01T16:04:13Z",
+      "message": "docs: document PublicShell and PricingGrid conventions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7204e00022",
+      "date": "2026-09-01T16:04:09Z",
+      "message": "feat(pricing): unified PricingGrid across pricing pages and landings",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c83d4901ee",
+      "date": "2026-09-01T16:04:04Z",
+      "message": "feat(config): add client-safe getClientFeatures helper",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e8cb1b1360",
+      "date": "2026-09-01T16:03:44Z",
+      "message": "fix(marketing): replace placeholder # links on press and docs pages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0394edda9e",
+      "date": "2026-09-01T16:03:40Z",
+      "message": "refactor(landing): extract shared PublicShell for public pages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f7a96964ab",
+      "date": "2026-09-01T12:31:26Z",
+      "message": "refactor(footer): remove system status indicator from brand column",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0f3ca1eb5e",
+      "date": "2026-09-01T12:31:19Z",
+      "message": "feat(landing): add Back button on marketing pages returning to active vertical",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0f86756af8",
+      "date": "2026-09-01T12:31:04Z",
+      "message": "feat(landing): persist active vertical in bubble nav across internal links",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a0168ea3d3",
+      "date": "2026-09-01T10:12:42Z",
+      "message": "feat(footer): link features, pricing and cases to vertical-specific pages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2201e934f1",
+      "date": "2026-09-01T10:12:36Z",
+      "message": "feat(landing): dedicated features and cases pages per vertical",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f829dc041f",
+      "date": "2026-09-01T10:12:31Z",
+      "message": "refactor(landing): extract shared CaseModal and remove section anchors",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f84dab6b0c",
+      "date": "2026-09-01T10:11:11Z",
+      "message": "feat(landing): re-enable all verticals in header navigation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "83cae84998",
+      "date": "2026-09-01T10:10:40Z",
+      "message": "fix(landing): smooth-scroll only same-page anchors instead of global scroll-behavior",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5cd32e495a",
+      "date": "2026-09-01T08:01:32Z",
+      "message": "refactor(settings): use AutocompleteField for business country",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ff93160c75",
+      "date": "2026-09-01T07:56:10Z",
+      "message": "chore: ignore local opencode.json config",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "571cce34a5",
+      "date": "2026-09-01T07:56:10Z",
+      "message": "docs: clarify Prisma public vs Kysely tenant ORM split",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "15bbefc6ba",
+      "date": "2026-09-01T07:56:04Z",
+      "message": "feat(settings): drive security settings tabs via query param",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8a2a819bb5",
+      "date": "2026-09-01T07:55:58Z",
+      "message": "feat(settings): add functional Company form with country select and phone hint",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "327e0e31cd",
+      "date": "2026-09-01T07:55:37Z",
+      "message": "feat(settings): add country column to Business for company location",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "666e2408b4",
+      "date": "2026-08-31T10:05:05Z",
+      "message": "docs: document OAuth-email linking and registration flow",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ee560f7167",
+      "date": "2026-08-31T10:05:01Z",
+      "message": "fix(auth): use appUrl and route unfinished registration to /register",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c38df65559",
+      "date": "2026-08-31T10:04:57Z",
+      "message": "fix(auth): allow completing registration for Google-created users",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e5770ffb15",
+      "date": "2026-08-31T10:04:53Z",
+      "message": "fix(auth): link OAuth account to existing email user",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c2de9c9fe1",
+      "date": "2026-08-30T17:08:08Z",
+      "message": "chore: trigger production deploy",
+      "author": "gleb"
+    },
+    {
+      "sha": "0f61b4cf23",
+      "date": "2026-08-30T17:05:55Z",
+      "message": "feat(landing+marketing): unified design system, clickable cards, symmetric 6-item blocks",
+      "author": "gleb"
+    },
+    {
+      "sha": "cea900b08e",
+      "date": "2026-08-30T15:22:37Z",
+      "message": "refactor(landing): shared MagneticLink/MotionLink, client-side nav in animated cards, content cleanups",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ecfae007bf",
+      "date": "2026-08-30T15:14:31Z",
+      "message": "fix(seo): canonical www.workdo.ru host in metadata/sitemap/robots, feature-flag-aware sitemap",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2cee43855b",
+      "date": "2026-08-30T15:12:40Z",
+      "message": "fix(landing): real 404 for unknown slugs, redirect legacy aliases, data-driven /features overview",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5bcbec4f49",
+      "date": "2026-08-30T15:10:37Z",
+      "message": "fix(seo): drop manual '| WorkDo' title suffix duplicated by root template",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "97434c18e4",
+      "date": "2026-08-30T14:02:48Z",
+      "message": "fix(settings): show 'set password' card for Google-registered users and hide recovery until password exists",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1d6577d92c",
+      "date": "2026-08-30T14:02:44Z",
+      "message": "fix(auth): notify unregistered Google users to sign up instead of silently redirecting",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d5f47d837c",
+      "date": "2026-08-30T13:46:45Z",
+      "message": "docs: trim design system doc and drop obsolete plans",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ac1ee68480",
+      "date": "2026-08-30T13:46:42Z",
+      "message": "chore(env): drop unused NEXT_PUBLIC Google OAuth vars",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7841060ee6",
+      "date": "2026-08-30T13:46:39Z",
+      "message": "fix(auth): remove duplicate CTA links on auth pages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "071d62657d",
+      "date": "2026-08-30T13:46:34Z",
+      "message": "feat(auth): send Google users straight in after OAuth without OTP",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ff091bd5b0",
+      "date": "2026-08-30T14:10:14Z",
+      "message": "feat(landing): recolor main CTA phrase 'Готовы попробовать?' as gradient",
+      "author": "Maxim"
+    },
+    {
+      "sha": "4a3b59ca32",
+      "date": "2026-08-30T13:53:41Z",
+      "message": "feat(security-vertical): port security vertical redesign to match localhost /security (hero, marquee, platform, solutions, cases, features with detail links, pricing, CTA, footer)",
+      "author": "Maxim"
+    },
+    {
+      "sha": "8d33ee2f0b",
+      "date": "2026-08-30T13:37:35Z",
+      "message": "feat(landing): remove industries section, align main page with reference (clickable cards, details, hover)",
+      "author": "Maxim"
+    },
+    {
+      "sha": "96eb811ec3",
+      "date": "2026-08-30T13:29:11Z",
+      "message": "feat(landing): clickable detail pages for features, advantages and trust with SEO metadata",
+      "author": "Maxim"
+    },
+    {
+      "sha": "e054ef7aef",
+      "date": "2026-08-30T13:11:56Z",
+      "message": "feat(landing+seo): real CHOP content, gradient CTA and mission, sitemap and robots, real phone",
+      "author": "Maxim"
+    },
+    {
+      "sha": "9fadd24e0b",
+      "date": "2026-08-30T13:10:51Z",
+      "message": "feat(seo): per-vertical and root metadata, sitemap and robots for workdo.ru, real phone in contacts and faq",
+      "author": "Maxim"
+    },
+    {
+      "sha": "74f6f06eef",
+      "date": "2026-08-30T13:10:49Z",
+      "message": "feat(landing): real CHOP content on main page, gradient CTA and mission, updated marquee, stats and phone",
+      "author": "Maxim"
+    },
+    {
+      "sha": "daeffc2a1b",
+      "date": "2026-08-29T20:32:35Z",
+      "message": "docs: add data access rules, close prisma-to-actions todo, require explicit commit approval",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2311b1b690",
+      "date": "2026-08-29T20:32:35Z",
+      "message": "refactor(platform): remove direct Prisma access from pages via server actions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9428dd091f",
+      "date": "2026-08-29T20:32:35Z",
+      "message": "feat(account): add password recovery, change and deletion with email codes",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ffa5711550",
+      "date": "2026-08-29T15:54:28Z",
+      "message": "fix(landing): pad first heading line to keep descender visible",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7719735ac6",
+      "date": "2026-08-29T15:54:26Z",
+      "message": "feat(marketing): add shared BackButton to footer pages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "19ecdc90d2",
+      "date": "2026-08-29T14:09:40Z",
+      "message": "docs(readme): document vertical feature flags",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c7c0ff83ec",
+      "date": "2026-08-29T13:49:56Z",
+      "message": "fix(landing): link pricing details to global /pricing page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "69f9b7f0cc",
+      "date": "2026-08-29T13:49:56Z",
+      "message": "feat(verticals): hide disabled verticals instead of Coming Soon badge",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "777fdc74f2",
+      "date": "2026-08-29T13:32:47Z",
+      "message": "feat(landing): rebuild main landing sections and metadata for marketing mock",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9022d01e06",
+      "date": "2026-08-29T12:47:28Z",
+      "message": "fix(landing): clear pricing page content from fixed header",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a0b12d4cd7",
+      "date": "2026-08-29T12:47:28Z",
+      "message": "refactor(landing): move root page into (landing) group, drop per-page headers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0f416508b8",
+      "date": "2026-08-29T12:47:10Z",
+      "message": "feat(landing): extract shared navigation header into (landing) layout",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7deeb3413f",
+      "date": "2026-08-29T10:27:26Z",
+      "message": "chore(security): drop unused IncidentComment feature",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d7de385923",
+      "date": "2026-08-29T10:27:23Z",
+      "message": "perf(employees): consolidate detail fetches and reduce redundant reads on update",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "de31cba21c",
+      "date": "2026-08-27T21:42:58Z",
+      "message": "docs: audit diff vs persisted row, position label-key mapping",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e514dde878",
+      "date": "2026-08-27T21:41:16Z",
+      "message": "refactor(security): single position map with label-to-key mapping",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f189130202",
+      "date": "2026-08-27T21:41:13Z",
+      "message": "fix(security): audit-log employee diff against persisted row",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e758474768",
+      "date": "2026-08-27T21:24:23Z",
+      "message": "chore: remove unused imports (shared pages, marketing, auth, platform)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "623eeb4d49",
+      "date": "2026-08-27T21:24:18Z",
+      "message": "chore(security): remove unused imports",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "61dddc3668",
+      "date": "2026-08-27T21:24:15Z",
+      "message": "chore(yacht): remove unused imports",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "067d67668a",
+      "date": "2026-08-27T21:23:37Z",
+      "message": "chore(beauty): remove unused imports",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "92a952a1a3",
+      "date": "2026-08-27T21:07:22Z",
+      "message": "docs: cleanup patrols page reference, update migration number to 053",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a6cf304c12",
+      "date": "2026-08-27T21:07:20Z",
+      "message": "fix(ui): autocomplete-field - sync value during render",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "649da0ade7",
+      "date": "2026-08-27T20:56:34Z",
+      "message": "docs: audit-log - human-readable journal documentation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "640ffafa42",
+      "date": "2026-08-27T20:56:32Z",
+      "message": "style(layout): load Inter via CSS import instead of next/font",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "41b9cccf94",
+      "date": "2026-08-27T20:56:30Z",
+      "message": "feat(security): audit-log journal page with human-readable details",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b9430c48f6",
+      "date": "2026-08-27T20:56:28Z",
+      "message": "feat(security): log entity mutations to audit journal",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e933a362f3",
+      "date": "2026-08-27T20:56:25Z",
+      "message": "feat(security): audit-log module - repository, service, enrichment, actions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bf1682cfc7",
+      "date": "2026-08-26T20:55:39Z",
+      "message": "feat(security): Shift ↔ TimeRecord integration",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "abae705ed2",
+      "date": "2026-08-26T20:55:24Z",
+      "message": "feat(security): monthly timesheet page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0077d84109",
+      "date": "2026-08-26T20:55:05Z",
+      "message": "feat(security): TimeRecord — daily page with check-in/out, date filter, CRUD dialogs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "90dc36d5a1",
+      "date": "2026-08-26T19:55:18Z",
+      "message": "docs: expand CustomFieldSuggestion — freeInput modes, full flow, example",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "90004ed3ce",
+      "date": "2026-08-26T19:07:20Z",
+      "message": "chore: regenerate Kysely types",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ee0319e8e5",
+      "date": "2026-08-26T19:05:32Z",
+      "message": "docs: CustomFieldSuggestion architecture",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3855dd5ba5",
+      "date": "2026-08-26T19:03:14Z",
+      "message": "refactor: AutocompleteField — remove persistKey, use DB-backed suggestions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "97ab4cf166",
+      "date": "2026-08-26T18:59:52Z",
+      "message": "refactor(security): integrate withCustomFieldCleanup in entity actions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d64ca68f45",
+      "date": "2026-08-26T18:57:25Z",
+      "message": "feat(yacht): CustomFieldSuggestion module",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c1cf3b9c0f",
+      "date": "2026-08-26T18:55:18Z",
+      "message": "feat(beauty): CustomFieldSuggestion module",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8ec9808ac9",
+      "date": "2026-08-26T18:54:17Z",
+      "message": "feat(security): CustomFieldSuggestion — migration 053 + full module",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0f95788c2d",
+      "date": "2026-08-25T20:57:23Z",
+      "message": "chore: regenerate Kysely types (incident-category table dropped)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "497aa23a56",
+      "date": "2026-08-25T20:57:13Z",
+      "message": "refactor(security): replace category Select with AutocompleteField in incident forms",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "30f40513b2",
+      "date": "2026-08-25T20:56:55Z",
+      "message": "feat: AutocompleteField — portal dropdown + localStorage persistence",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ebd27972f0",
+      "date": "2026-08-25T20:56:44Z",
+      "message": "fix(security): pass category through incident repo/service + Russian presets",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "78d0a01510",
+      "date": "2026-08-25T20:56:33Z",
+      "message": "refactor(security): remove IncidentCategory table and entity",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d45d3e5ecb",
+      "date": "2026-08-25T19:14:55Z",
+      "message": "chore(security): delete orphaned salary-client.tsx",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7085bf7ce4",
+      "date": "2026-08-25T19:08:37Z",
+      "message": "refactor(security): fix cross-domain layering — services use services, not repositories",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "841856dbd5",
+      "date": "2026-08-25T19:08:20Z",
+      "message": "fix(security): replace empty catch blocks with toast notifications and remove mock data",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8701f5e7d1",
+      "date": "2026-08-25T19:07:53Z",
+      "message": "refactor(security): remove dead code — duplicate actions and mock fallbacks",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7c05d5a0f2",
+      "date": "2026-08-20T21:10:32Z",
+      "message": "fix(security): export 5 new services from barrel",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8e625b0060",
+      "date": "2026-08-20T21:10:23Z",
+      "message": "refactor(security): route action files through service layer",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "325bf8bcd7",
+      "date": "2026-08-20T21:10:07Z",
+      "message": "feat(security): add service layer for 5 repositories without services",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "48af529746",
+      "date": "2026-08-20T19:39:41Z",
+      "message": "fix(security): unify loading indicators to use spinner consistently",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d1688e79e3",
+      "date": "2026-08-20T19:23:15Z",
+      "message": "fix(security): populate empty loading.tsx files for edit/new routes",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f2681244ec",
+      "date": "2026-08-20T19:16:30Z",
+      "message": "docs: update architecture and agent docs for barrel exports, loading boundaries, and verify-create script",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0c7dfe7fb2",
+      "date": "2026-08-20T19:16:22Z",
+      "message": "feat(security): add loading/error boundaries for all routes",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ddc0f0b545",
+      "date": "2026-08-20T15:42:24Z",
+      "message": "refactor(security): move getFinanceHistoryAction from salary.actions to finance.actions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "715d93d45f",
+      "date": "2026-08-20T15:39:01Z",
+      "message": "refactor(security): complete barrel export with 20 missing entries",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8f8382834f",
+      "date": "2026-08-17T16:12:17Z",
+      "message": "fix(security): enforce non-empty Employee.position at all layers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6514ed5474",
+      "date": "2026-08-17T15:17:52Z",
+      "message": "feat(tenant): add from-scratch creation verification script",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cdbe661e8c",
+      "date": "2026-08-16T20:33:46Z",
+      "message": "perf(images): migrate img tags to next/image for remote assets",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a8e9dd3eaf",
+      "date": "2026-08-16T20:19:56Z",
+      "message": "fix(lint): restore eslint via flat config and fix errors",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a9285b51a0",
+      "date": "2026-08-16T15:32:31Z",
+      "message": "docs: document migration immutability and template-pair rules",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "eb1c01ce31",
+      "date": "2026-08-16T15:20:32Z",
+      "message": "docs: update tenant migration counts to 050",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "555aa4ba94",
+      "date": "2026-08-16T15:20:25Z",
+      "message": "fix(security): relocate salary indexes and reconcile legacy drift",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "dcbe12b917",
+      "date": "2026-08-16T15:20:18Z",
+      "message": "fix(security): align EmployeeLicense nullability and restore employee FKs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f60540afb5",
+      "date": "2026-08-16T15:20:12Z",
+      "message": "feat(yacht): add active index on YachtClient",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b41a22a79d",
+      "date": "2026-08-16T15:20:07Z",
+      "message": "feat(beauty): add master specialties migration",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0a7cb1b64d",
+      "date": "2026-08-16T15:20:01Z",
+      "message": "feat(tenant): add schema drift verification script",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "64dd385f95",
+      "date": "2026-08-16T13:44:39Z",
+      "message": "refactor(db): generated kysely types as source of truth, sync up.sql with DB, fix tenant provisioning",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8aa3dc6e77",
+      "date": "2026-08-15T18:52:07Z",
+      "message": "docs(security): reflect guard to employee rename and dropped Patrol in vertical docs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "98c6eee17a",
+      "date": "2026-08-15T18:46:04Z",
+      "message": "docs: update security docs for guard to employee rename",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e8785847d6",
+      "date": "2026-08-15T18:45:58Z",
+      "message": "refactor(security): rename guard entities to employee",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4b882290b5",
+      "date": "2026-08-15T18:45:53Z",
+      "message": "feat(security): rename guard columns to employee (migration 046)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "47866d17ac",
+      "date": "2026-08-15T18:45:48Z",
+      "message": "chore(security): fix kysely-codegen v0.20.0 flags with template schemas",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0e2f03634a",
+      "date": "2026-08-14T18:34:20Z",
+      "message": "upd_docs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "240eb04327",
+      "date": "2026-08-14T18:28:26Z",
+      "message": "refactor(security): remove unused Guards page and legacy wrappers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3a01e56224",
+      "date": "2026-08-14T18:28:16Z",
+      "message": "perf(security): cache reference lists with tag invalidation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b088cccf52",
+      "date": "2026-08-14T18:28:06Z",
+      "message": "perf(security): instructions - SQL search, server-side pagination, cached types",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a112c1314c",
+      "date": "2026-08-14T18:27:55Z",
+      "message": "perf(security): brigades - SQL search, grouped last-shift query, cached active list",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d4d4321aa5",
+      "date": "2026-08-14T18:27:45Z",
+      "message": "fix(security): incidents - search by client name, client/object select",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5c57eed8bf",
+      "date": "2026-08-14T18:27:34Z",
+      "message": "fix(security): contracts - debounced search, object names, client select",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f6b45ed2bc",
+      "date": "2026-08-14T18:27:23Z",
+      "message": "feat(security): estimates - server-side search, summary, client select",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f3f7867c47",
+      "date": "2026-08-14T18:27:13Z",
+      "message": "feat(security): budgets - server-side search + summary aggregation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d2f2c8cc89",
+      "date": "2026-08-14T16:42:33Z",
+      "message": "docs: update documentation to match current architecture",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bb52d27251",
+      "date": "2026-08-14T16:42:27Z",
+      "message": "refactor: remove unused CIS geo data pipeline",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "08678161cc",
+      "date": "2026-08-14T16:42:20Z",
+      "message": "fix(security): revalidate list routes after client/equipment/object mutations",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "129050afaf",
+      "date": "2026-08-14T16:42:13Z",
+      "message": "feat(employees): server-side pagination, search and cached reference data",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6a7240a963",
+      "date": "2026-08-13T20:41:34Z",
+      "message": "feat(equipment): server-side pagination and search",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3c5324e2bd",
+      "date": "2026-08-13T20:41:28Z",
+      "message": "feat(objects): server-side pagination and search",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c99a577882",
+      "date": "2026-08-13T20:41:23Z",
+      "message": "feat(clients): server-side pagination and search",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "42ed59d0b3",
+      "date": "2026-08-13T20:41:18Z",
+      "message": "feat(posts): server-side pagination and search",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b6ac1d2084",
+      "date": "2026-08-13T12:31:09Z",
+      "message": "feat(employees): align table checkboxes with brigades",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7c86769946",
+      "date": "2026-08-13T12:26:37Z",
+      "message": "feat(employees): restructure list toolbar and action menu",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9f034f81ee",
+      "date": "2026-08-13T12:26:09Z",
+      "message": "fix(employees): restore selection from sessionStorage after hydration",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "909f4f95ca",
+      "date": "2026-08-13T12:05:00Z",
+      "message": "edited_employeers-style",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7a49a693b3",
+      "date": "2026-08-03T19:05:11Z",
+      "message": "docs: document entity-select wrappers hierarchy",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "51796690eb",
+      "date": "2026-08-03T19:05:05Z",
+      "message": "fix(posts): qualify search filter columns and make address optional",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6438ef6dd2",
+      "date": "2026-08-03T19:04:58Z",
+      "message": "fix(contracts): recompute CompanyFinance on create/update/delete/status-change",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d69924c0dd",
+      "date": "2026-08-03T19:04:52Z",
+      "message": "refactor(security): replace inline debounced selects with entity-select wrappers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1f68d0cc33",
+      "date": "2026-08-03T19:04:44Z",
+      "message": "feat(components): add useLabeledInput hook and single/multi entity-select wrappers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b3a225a4d9",
+      "date": "2026-07-30T17:57:44Z",
+      "message": "refactor(types): extract beauty and yacht manual types to .types.ts files, safe from kysely-codegen",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "02c8303fcf",
+      "date": "2026-07-29T22:32:07Z",
+      "message": "refactor(types): extract manual security types to security.types.ts, safe from kysely-codegen",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9d01ced9d4",
+      "date": "2026-07-29T22:27:49Z",
+      "message": "fix(scripts): replace --default-schema with --schema in kysely-codegen scripts; add yacht",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b7293f2ce5",
+      "date": "2026-07-29T22:26:36Z",
+      "message": "fix(build): add SecurityDatabase, type aliases, and repo overloads for kysely types",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0ee3f223ce",
+      "date": "2026-07-29T22:02:40Z",
+      "message": "upd agents.md",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a662489e8f",
+      "date": "2026-07-29T21:44:35Z",
+      "message": "docs: add entity-select hierarchy to CUSTOM_COMPONENTS.md",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f3adc44c3d",
+      "date": "2026-07-29T21:44:31Z",
+      "message": "feat(brigades): integrate EmployeeMultiSelect with disabled/loading/skeleton",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8c8b870a3d",
+      "date": "2026-07-29T21:44:28Z",
+      "message": "feat(components): create EmployeeSelect and EmployeeMultiSelect entity wrappers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "efc53c8dcd",
+      "date": "2026-07-29T21:44:24Z",
+      "message": "feat(employees): add position to search ilike fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e004e93151",
+      "date": "2026-07-29T20:47:38Z",
+      "message": "feat(contract): rewrite form with all extended fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "db67e5df88",
+      "date": "2026-07-29T20:47:23Z",
+      "message": "feat(contract): add file upload component with drag-and-drop support",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "28dc1eec2a",
+      "date": "2026-07-29T20:47:18Z",
+      "message": "feat(autocomplete-field): add getOptionLabel prop for display labels",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "86c322d39d",
+      "date": "2026-07-29T20:47:10Z",
+      "message": "fix(kysely): add missing ContractStatus generic type",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3515a28e37",
+      "date": "2026-07-29T20:47:06Z",
+      "message": "feat(contract): pass new fields through service and actions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "dfe71287e5",
+      "date": "2026-07-29T20:47:02Z",
+      "message": "feat(contract): update repository with join tables and extended fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8951a07774",
+      "date": "2026-07-29T20:46:57Z",
+      "message": "feat(contract): add extended fields to domain entity and migration",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3e4278b4c0",
+      "date": "2026-07-28T21:25:27Z",
+      "message": "feat: redesign instructions list as table with search and pagination",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1e1dffa618",
+      "date": "2026-07-28T21:25:22Z",
+      "message": "feat: replace emoji location icons with lucide icons in equipment table",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d88864dcba",
+      "date": "2026-07-28T21:25:18Z",
+      "message": "chore: remove unused AutocompleteInput component",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2ac1b84342",
+      "date": "2026-07-28T21:25:13Z",
+      "message": "refactor: replace AutocompleteInput with AutocompleteField",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d2e05b969f",
+      "date": "2026-07-28T21:25:09Z",
+      "message": "refactor: replace inline autocomplete with AutocompleteField",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7f2694a520",
+      "date": "2026-07-28T21:25:02Z",
+      "message": "feat: add AutocompleteField component",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e4833ce38b",
+      "date": "2026-07-28T20:19:42Z",
+      "message": "feat: redesign equipment list as table with search, pagination, and status filter",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c40b689c56",
+      "date": "2026-07-28T20:19:37Z",
+      "message": "feat: add location and responsible person names to equipment repository",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ec4e92c6bd",
+      "date": "2026-07-28T17:25:39Z",
+      "message": "feat: redesign posts list as table with search, pagination, and edit actions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a7732c8bbc",
+      "date": "2026-07-28T17:25:31Z",
+      "message": "feat: add equipmentCount and responsible fields to post repository",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c301c3da76",
+      "date": "2026-07-28T17:09:37Z",
+      "message": "chore: remove old *-modal files after rename to *-dialog",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "12b2900c8e",
+      "date": "2026-07-28T17:09:27Z",
+      "message": "refactor: rename *-modal to *-dialog for naming consistency",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "419c5609a6",
+      "date": "2026-07-28T17:09:22Z",
+      "message": "fix: reuse ObjectForm in CreateObjectDialog instead of duplicating form logic",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d2e8290438",
+      "date": "2026-07-28T17:09:18Z",
+      "message": "refactor: extract ObjectForm, PostForm, EmployeeForm into reusable components",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "99a6b97803",
+      "date": "2026-07-28T17:09:13Z",
+      "message": "refactor: extract ClientForm into reusable component",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2f8e69309c",
+      "date": "2026-07-28T15:57:22Z",
+      "message": "feat: rewrite objects list to table layout with search and pagination",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7678034663",
+      "date": "2026-07-28T15:57:17Z",
+      "message": "feat: add postCount and managerName to ObjectRepository.findAll",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "60ea76e7f4",
+      "date": "2026-07-28T15:53:09Z",
+      "message": "feat: replace manager select with searchable SearchDropdown in object forms",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f0905db437",
+      "date": "2026-07-28T15:53:05Z",
+      "message": "feat: add searchEmployeesAction server action",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d4f8cb5493",
+      "date": "2026-07-27T21:59:52Z",
+      "message": "feat: add multi-object picker to client create/edit forms",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1ba25da248",
+      "date": "2026-07-27T21:59:48Z",
+      "message": "feat: add objects section to client detail page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cda6448cac",
+      "date": "2026-07-27T21:59:43Z",
+      "message": "feat: create ObjectPicker component using MultiSearchDropdown",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6a1648e5f5",
+      "date": "2026-07-27T21:59:36Z",
+      "message": "feat: add object-client link/unlink server actions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bc30adabf5",
+      "date": "2026-07-27T21:04:42Z",
+      "message": "feat(clients): rewrite to table layout matching brigades style",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b3665f6604",
+      "date": "2026-07-27T21:04:33Z",
+      "message": "feat(clients): add objectCount to client list via countByClient query",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a6a1991c87",
+      "date": "2026-07-27T21:00:24Z",
+      "message": "docs: add architecture guide with full src/ structure and request flow",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "78016a8a73",
+      "date": "2026-07-27T20:33:24Z",
+      "message": "fix(brigades): prevent double-counting leaders in employeeCount",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c1d81674f8",
+      "date": "2026-07-27T20:28:30Z",
+      "message": "fix(brigade-form): show already-selected employees in search results",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7c15c8e5d2",
+      "date": "2026-07-27T20:28:20Z",
+      "message": "fix(import): include leaders in employeeBrigadeMap and fix brigade lookup order",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "05c117b87e",
+      "date": "2026-07-26T21:19:39Z",
+      "message": "feat(security): add brigade import with 3-step modal, AUTO_DETECT mapper, and restore inactive toggle",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "53406e2039",
+      "date": "2026-07-26T21:19:27Z",
+      "message": "docs: update security vertical, project rules, custom components, and agents",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f6f1e96e57",
+      "date": "2026-07-26T21:19:22Z",
+      "message": "chore(security): simplify import-export buttons to use ImportBrigadesModal, add trailing newline",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cc8ec53b0e",
+      "date": "2026-07-26T21:19:15Z",
+      "message": "fix(security): remove employee from all brigades on fire/delete/terminate, search by name in any order",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1a2a827998",
+      "date": "2026-07-26T21:19:07Z",
+      "message": "feat(security): block employees from other brigades in brigade search, enrich brigade data resolution",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b7e243e13f",
+      "date": "2026-07-26T21:18:59Z",
+      "message": "fix(security): brigade table layout - table-fixed, shortened headers, truncated cells",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ed60cf6843",
+      "date": "2026-07-26T17:28:17Z",
+      "message": "fix(security): load brigade objects by ID instead of text search",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e117eb7d5b",
+      "date": "2026-07-26T17:23:25Z",
+      "message": "feat(security): extend object search to include phone, email, groups, type, and manager",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7320e706c4",
+      "date": "2026-07-26T17:20:07Z",
+      "message": "refactor(security): remove stale objectName from EmployeeWithBrigade and employee queries",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "37ff6a1fd9",
+      "date": "2026-07-26T17:19:55Z",
+      "message": "feat(security): enrich brigade data and add table header with count and select all",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7b1a703b53",
+      "date": "2026-07-26T17:19:45Z",
+      "message": "chore(security): migrate brigade objectId to objectIds for multi-object support",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "97ec3b6de0",
+      "date": "2026-07-25T20:17:49Z",
+      "message": "fix(security): убрана двойная пагинация бригад - findAll уже делает limit/offset на уровне БД",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fe1aad958e",
+      "date": "2026-07-25T20:09:10Z",
+      "message": "fix(security): пагинация - исправлена потеря pageSize при переключении страниц, сохранение существующих URL-параметров",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5180bb4a75",
+      "date": "2026-07-25T20:08:29Z",
+      "message": "fix(security): форма бригады - синхронизация бригадир/сотрудник, trim поиска, защита оверлея от выделения текста",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3c38c8cfca",
+      "date": "2026-07-25T20:07:53Z",
+      "message": "feat(security): расширен поиск сотрудников - добавлены email, телефон, табельный номер и конкатенированное ФИО в ILIKE",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8c16352b4a",
+      "date": "2026-07-25T18:54:58Z",
+      "message": "fix(security): exclude brigade employees from brigadier search",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "aab4eb2ccb",
+      "date": "2026-07-24T22:17:56Z",
+      "message": "chore: reduce JWT callback noise in dev",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4b2b7b447d",
+      "date": "2026-07-24T22:17:34Z",
+      "message": "docs: update documentation for current components and features",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2dea0b7fa5",
+      "date": "2026-07-24T22:17:19Z",
+      "message": "feat(security): improve CSV import with auto-create brigades and better field mapping",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "542658cfc1",
+      "date": "2026-07-24T22:17:02Z",
+      "message": "feat(security): add multi-brigadier support, fix brigade save and search",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "85b34d1edc",
+      "date": "2026-07-23T21:10:02Z",
+      "message": "docs: add CUSTOM_COMPONENTS.md and update AGENTS.md",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5ce2463151",
+      "date": "2026-07-23T21:09:43Z",
+      "message": "feat(security): convert employee list to table layout with persistent selection",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "dc4e4f8e63",
+      "date": "2026-07-23T21:09:30Z",
+      "message": "perf(security): optimize employee queries with JOINs and add brigade filtering",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8374470bf1",
+      "date": "2026-07-23T21:09:14Z",
+      "message": "refactor(security): replace ScheduleInput/PositionInput with AutocompleteInput in forms",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d23399ea93",
+      "date": "2026-07-23T21:08:55Z",
+      "message": "refactor(security): refactor brigade form and optimize employee count query",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f7b1d0933a",
+      "date": "2026-07-23T21:08:16Z",
+      "message": "feat: add reusable input components, remove PositionInput/ScheduleInput",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f3f7fb7b53",
+      "date": "2026-07-23T16:54:07Z",
+      "message": "refactor(security): move Posts nav item to Clients and Objects section",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fde5831e89",
+      "date": "2026-07-23T16:54:00Z",
+      "message": "feat(security): reorganize post form layout",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5b177111e2",
+      "date": "2026-07-23T16:53:51Z",
+      "message": "feat(security): remove patrol module and references from UI",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "91ed0abc82",
+      "date": "2026-07-23T16:53:34Z",
+      "message": "feat(security): merge patrol fields into post entity, repo, service, actions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9f83f1d340",
+      "date": "2026-07-23T16:53:26Z",
+      "message": "feat(security): add migration to merge patrol into post",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7039e85c52",
+      "date": "2026-07-23T16:24:00Z",
+      "message": "docs: update project rules and agent guidelines",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "319744c67f",
+      "date": "2026-07-23T16:23:48Z",
+      "message": "feat: add brigade archive (soft delete) with bulk actions and confirmation modal",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4deb92d6a4",
+      "date": "2026-07-23T16:23:34Z",
+      "message": "fix: disable workHours/workDays fields when salary type is monthly",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "90f171875d",
+      "date": "2026-07-23T16:23:21Z",
+      "message": "fix: improve badgeNumber uniqueness check and filter placeholder values",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c49df84920",
+      "date": "2026-07-23T16:23:12Z",
+      "message": "fix: allow custom positions to appear in PositionInput dropdown",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c663c4bd60",
+      "date": "2026-07-23T15:06:09Z",
+      "message": "docs: add project rules and security vertical documentation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "58599ecd01",
+      "date": "2026-07-23T15:05:46Z",
+      "message": "fix: prevent dropdown blur on selection in LicenseTypeInput",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "155f8f5f68",
+      "date": "2026-07-23T14:46:43Z",
+      "message": "fix: prevent dropdown blur on selection in ScheduleInput and PositionInput",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8fa43b5071",
+      "date": "2026-07-23T13:13:05Z",
+      "message": "feat(employee): add delete capability with FK cleanup and bulk selection",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "eed2cdb4b0",
+      "date": "2026-07-23T12:38:57Z",
+      "message": "feat(incident): add patrol relation, required date, select dropdowns, disable client/contract",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1ebd090ada",
+      "date": "2026-07-22T22:15:09Z",
+      "message": "feat(incidents): add status field to create form and simplify status options",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0913bed09a",
+      "date": "2026-07-22T19:27:06Z",
+      "message": "feat(security): add post/equipment/instruction form fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "58d8a58b11",
+      "date": "2026-07-22T18:06:41Z",
+      "message": "feat(objects): add object type, contacts, manager, and groups fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "73915da03b",
+      "date": "2026-07-22T17:56:34Z",
+      "message": "fix(objects): qualify ambiguous column references after LEFT JOIN",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7425e474e0",
+      "date": "2026-07-22T17:56:22Z",
+      "message": "feat(clients): add INN, legal address, website, and notes fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "99611d5a3f",
+      "date": "2026-07-22T17:55:59Z",
+      "message": "feat(brigades): add description field and fix dialog text selection",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ecd4101916",
+      "date": "2026-07-22T17:55:43Z",
+      "message": "feat(employees): add gender, INN/UNP, and SNILS fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1a53469c47",
+      "date": "2026-07-22T17:55:27Z",
+      "message": "feat(patrols): add form fields for full patrol creation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8cd2804e1e",
+      "date": "2026-07-22T16:52:25Z",
+      "message": "fix(tags-input): prevent dropdown blur on selection and show locally created tags immediately",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b366b8e226",
+      "date": "2026-07-20T21:04:21Z",
+      "message": "chore: stop tracking tsconfig.tsbuildinfo (already gitignored)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0f24833ad2",
+      "date": "2026-07-20T21:03:23Z",
+      "message": "feat(shifts): redesign ShiftForm with series mode, brigade filter, break, actual times, equipment, rating",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c64613b6e6",
+      "date": "2026-07-20T21:03:15Z",
+      "message": "refactor(shifts): remove standalone GenerateShiftsModal (replaced by ShiftForm series mode)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7453c06e3c",
+      "date": "2026-07-20T19:54:34Z",
+      "message": "Persist sidebar collapse state in localStorage",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "be2ec37522",
+      "date": "2026-07-20T19:54:30Z",
+      "message": "Persist custom equipment categories across forms",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ee83e4b815",
+      "date": "2026-07-20T19:54:25Z",
+      "message": "Replace equipment three-dot menu with edit icon + row click to view",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fba83f7a01",
+      "date": "2026-07-20T19:54:20Z",
+      "message": "Redesign brigade form and card with all new fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cdc34cc10d",
+      "date": "2026-07-20T19:54:14Z",
+      "message": "Update brigade actions with new fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "55bc265d2f",
+      "date": "2026-07-20T19:54:10Z",
+      "message": "Add brigadeLeaderId, schedule, specialization fields to Brigade",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "38283a9c2d",
+      "date": "2026-07-20T15:30:14Z",
+      "message": "fixup: replace warranty/TO/serviceLife fields with supplier in equipment forms and detail page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "36f6b65f6d",
+      "date": "2026-07-20T15:30:09Z",
+      "message": "fixup: replace warrantyPeriod/nextMaintenanceDate/serviceLife with supplier in equipment backend",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "25f8d0d28c",
+      "date": "2026-07-20T15:20:22Z",
+      "message": "feat(security): redesign equipment pages with new fields and location/employee selectors",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0028d3d8a5",
+      "date": "2026-07-20T15:20:17Z",
+      "message": "feat(security): add equipment file upload API route",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8286c4e3a6",
+      "date": "2026-07-20T15:20:12Z",
+      "message": "feat(security): update equipment backend with new fields (entity, repo, service, actions)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d866d880e2",
+      "date": "2026-07-20T15:20:06Z",
+      "message": "feat(security): add migration for equipment new fields (location, manufacturer, warranty, etc.)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2e2b897273",
+      "date": "2026-07-20T15:02:33Z",
+      "message": "feat(security): map position keys to Russian labels in PositionInput",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "550e0e1a7f",
+      "date": "2026-07-20T15:02:29Z",
+      "message": "feat(security): add bulk actions and fix hydration error in employees page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bb2d19250a",
+      "date": "2026-07-20T15:02:26Z",
+      "message": "feat(security): update post pages with new fields and employee search with highlights",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e90630dfd6",
+      "date": "2026-07-20T15:02:17Z",
+      "message": "feat(security): add badgeNumber to employee search",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "243dcc1076",
+      "date": "2026-07-20T15:02:13Z",
+      "message": "feat(security): add responsibleEmployeeId, schedule, equipment, instructions to Post backend",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c4d51b0a76",
+      "date": "2026-07-20T15:02:09Z",
+      "message": "feat(security): add migration for post responsibleEmployee, schedule, equipment, instructions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2623c25243",
+      "date": "2026-07-20T12:48:45Z",
+      "message": "fix: persist checkbox selection across navigation via URL params",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6e431a9940",
+      "date": "2026-07-20T12:45:08Z",
+      "message": "feat: add checkbox selection to employee list",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "82a24302fe",
+      "date": "2026-07-20T12:30:52Z",
+      "message": "fix: close custom dropdown on focus outside (Tab/click on other field)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6e8b3a8fe6",
+      "date": "2026-07-20T12:30:42Z",
+      "message": "feat(security): update employee pages for citizenship, licenses, emergency relationship",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "252118bddf",
+      "date": "2026-07-20T12:30:23Z",
+      "message": "feat(security): add reusable UI components for employee management",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8f5ba36895",
+      "date": "2026-07-20T12:30:16Z",
+      "message": "feat(security): add citizenship, licenses (EmployeeLicense), emergency relationship to employee model",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "21151ff1df",
+      "date": "2026-07-20T12:30:09Z",
+      "message": "feat(security): add tenant migrations for currency, citizenship, licenses, emergency relationship",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ce52eaa290",
+      "date": "2026-07-17T18:00:36Z",
+      "message": "feat: display employee photos in list, detail card, and lightbox",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "feed092573",
+      "date": "2026-07-17T18:00:31Z",
+      "message": "feat: add photo upload to employee edit form",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a6acded9ca",
+      "date": "2026-07-17T18:00:25Z",
+      "message": "feat: add photo upload to employee create form",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f516678223",
+      "date": "2026-07-17T18:00:14Z",
+      "message": "feat: add S3 storage service with sharp image processing (300x300 WebP)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f3c6229282",
+      "date": "2026-07-17T18:00:09Z",
+      "message": "chore: add S3 env vars to .env.example and env validation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b181e3d4ab",
+      "date": "2026-07-17T15:59:40Z",
+      "message": "edited_reciclerView_employees || edited_viewHolder_employees",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cbe7965ad1",
+      "date": "2026-07-17T14:56:59Z",
+      "message": "chore: add hint to salaryType label in import config",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4b5f7e2ba7",
+      "date": "2026-07-17T14:54:27Z",
+      "message": "refactor: replace monthlySalary/hourlyRate with salaryType/salaryAmount",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cbdb2cb3ea",
+      "date": "2026-07-17T14:54:21Z",
+      "message": "feat: schedule combobox with custom entry + salary field refactoring",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2a12d65acf",
+      "date": "2026-07-17T14:54:14Z",
+      "message": "feat: employee import from xlsx",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "47d06935e4",
+      "date": "2026-07-16T20:24:35Z",
+      "message": "fixed_coming-soon-flag",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9a9e74b7c9",
+      "date": "2026-07-16T19:32:30Z",
+      "message": "added_lending-blur",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0b31573f68",
+      "date": "2026-07-16T19:20:17Z",
+      "message": "added_vertical-flag_coming-soon",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "86f694d43c",
+      "date": "2026-07-15T20:10:59Z",
+      "message": "delete_breadcrumbs || back-btn",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cdfd6ff388",
+      "date": "2026-07-15T20:04:39Z",
+      "message": "feat: add filters, actions and truncation to instructions page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "baea58434a",
+      "date": "2026-07-15T19:28:38Z",
+      "message": "instruction_added_custom-type || filter || drop-down || autoClose_modal",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4b60b5a1f3",
+      "date": "2026-07-15T15:50:17Z",
+      "message": "added_brigades-header || added_clients_filter-reset-btn",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5294c1f88f",
+      "date": "2026-07-15T15:33:34Z",
+      "message": "fixed_employers-arrows-filters",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "917fc3d8a7",
+      "date": "2026-07-15T15:24:09Z",
+      "message": "added_position_filter || custom_position",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ddb4bbdb93",
+      "date": "2026-07-15T13:46:08Z",
+      "message": "added_prices_landings",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "755f289e27",
+      "date": "2026-07-14T20:30:36Z",
+      "message": "adjusted_vertical-pricings",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ec3fae3fc8",
+      "date": "2026-07-13T20:55:04Z",
+      "message": "refactor: migrate security & yacht pages to centralized vertical actions (3.2.3)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0778607ec3",
+      "date": "2026-07-13T20:48:40Z",
+      "message": "refactor: migrate beauty & security pages to centra1ized vertica1 actions (3.2.3)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3b4dca03cd",
+      "date": "2026-07-13T19:52:29Z",
+      "message": "refactor: extract tenant lookup into shared action (beauty, 14 pages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2575e01822",
+      "date": "2026-07-11T20:44:25Z",
+      "message": "feat: apply two-phase + Turnstile to all auth actions, update SECURITY.md",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5e0adb7c6a",
+      "date": "2026-07-11T20:44:25Z",
+      "message": "feat: two-phase rate limit (captchaAfter) + dynamic Turnstile script loading",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "784bba41b3",
+      "date": "2026-07-11T20:44:24Z",
+      "message": "feat: add global IP rate limit in proxy (env GLOBAL_RATE_LIMIT_PER_MINUTE/BLOCK_MINUTES)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "16f503bf1f",
+      "date": "2026-07-11T19:50:43Z",
+      "message": "feat: add Turnstile CAPTCHA after rate limit",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "df4ae11e8e",
+      "date": "2026-07-11T19:50:24Z",
+      "message": "fix: cleanup tenant schema on registration failure",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "171f2c0671",
+      "date": "2026-07-11T19:48:43Z",
+      "message": "fix: cleanup tenant schema on registration failure",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "27d23986e3",
+      "date": "2026-07-11T19:46:56Z",
+      "message": "feat: add Upstash Redis rate limiter",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4b0a100baa",
+      "date": "2026-07-11T19:44:53Z",
+      "message": "fix: remove PII from email logs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "68a5759c74",
+      "date": "2026-07-11T19:44:21Z",
+      "message": "fix: replace base64 admin session with JWT",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4d0b52ad6f",
+      "date": "2026-07-11T19:43:22Z",
+      "message": "fix: remove custom JWT auth routes",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "558cbbd657",
+      "date": "2026-07-09T14:46:00Z",
+      "message": "added_telegram-bot-error-collector",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "628278af8b",
+      "date": "2026-07-08T15:14:51Z",
+      "message": "fixed_security || deleted_fallback-secret || leak_DATABASE_URL || leak_password",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4c40405d77",
+      "date": "2026-07-02T20:34:46Z",
+      "message": "added_client-dialog-window || added_search-highlight",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "39deb78708",
+      "date": "2026-07-02T20:21:53Z",
+      "message": "added_object-dialog-window || changed_client-search",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1845784d4a",
+      "date": "2026-07-02T19:48:58Z",
+      "message": "added_search-highlight || warning",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8b27b1198e",
+      "date": "2026-07-02T19:42:33Z",
+      "message": "edited_search-object-logic",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "28494e345d",
+      "date": "2026-07-01T18:33:20Z",
+      "message": "added_readme",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e2f6592c49",
+      "date": "2026-06-29T18:49:35Z",
+      "message": "post_added_contact-info_to-list",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "536947d12e",
+      "date": "2026-06-29T18:21:29Z",
+      "message": "client_changed_tag-filter || added_search-logic",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "10cd3d472b",
+      "date": "2026-06-29T18:07:37Z",
+      "message": "fixed_custom-tag-reuse",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "760460c1b2",
+      "date": "2026-06-29T17:51:50Z",
+      "message": "major_search && hint logic-changes",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c62e0c5efa",
+      "date": "2026-06-29T17:26:40Z",
+      "message": "changed_object-search-logic || added_object_json_client-info",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "88ef832773",
+      "date": "2026-06-29T16:54:44Z",
+      "message": "added_object-status || search_logic",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e9e6ab0106",
+      "date": "2026-06-28T21:11:40Z",
+      "message": "added_object_client-drop-table || sync_new_fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ca16560a28",
+      "date": "2026-06-28T21:00:35Z",
+      "message": "change_client-status-ui",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "47b2bef12e",
+      "date": "2026-06-28T20:57:41Z",
+      "message": "added_post-status",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5d5b74565f",
+      "date": "2026-06-28T20:51:03Z",
+      "message": "changed-sidebar-sequence || optimized_old_security-migrations",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c9d4161949",
+      "date": "2026-06-28T20:08:14Z",
+      "message": "added_object-tab",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "89250b09ef",
+      "date": "2026-06-28T19:27:28Z",
+      "message": "added_logic-register || fixed_coockie-auth",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f0866de8ef",
+      "date": "2026-06-28T18:45:35Z",
+      "message": "fidex_register-error",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "22bac5d981",
+      "date": "2026-06-26T20:47:53Z",
+      "message": "landing_vertical_toggle_with_custom_content",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ce981aca3a",
+      "date": "2026-06-25T21:08:12Z",
+      "message": "added_status-activity || filter || fixed_tags-hint-list",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6dc0681a7f",
+      "date": "2026-06-25T20:41:05Z",
+      "message": "epic_remake_sidebar",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0b7aa19a08",
+      "date": "2026-06-25T18:46:34Z",
+      "message": "added_tab_themes-sidebar",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d0451be315",
+      "date": "2026-06-17T20:12:56Z",
+      "message": "deleted_attendance",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e08a4a77cf",
+      "date": "2026-06-17T19:42:17Z",
+      "message": "fixed_employee-visible",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d24ae89664",
+      "date": "2026-06-17T19:41:19Z",
+      "message": "added_date",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3cf551e2fd",
+      "date": "2026-06-17T19:05:13Z",
+      "message": "deleted_header || added_more_employee-instruct",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "37637cae93",
+      "date": "2026-06-17T17:58:47Z",
+      "message": "merge_guards->employee",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3bca4cef8a",
+      "date": "2026-06-06T21:19:05Z",
+      "message": "edited_budgets|smets",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "25a34667b3",
+      "date": "2026-06-06T20:41:19Z",
+      "message": "added_equipment-filter || edited_instruction",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4a3e9e0ad9",
+      "date": "2026-06-06T20:09:49Z",
+      "message": "added_sinc_guard-employee",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a317936702",
+      "date": "2026-06-05T20:01:49Z",
+      "message": "added_tags-system",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6f8fdf96df",
+      "date": "2026-06-05T18:48:26Z",
+      "message": "added_light-active-sidebar",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "874df57fb8",
+      "date": "2026-06-05T13:17:00Z",
+      "message": "fixed_generic-type",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bdc871458c",
+      "date": "2026-06-05T13:10:41Z",
+      "message": "added_geoapify",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bab2ba7ad9",
+      "date": "2026-06-04T18:03:10Z",
+      "message": "upd_404",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a053280e0a",
+      "date": "2026-06-04T17:26:16Z",
+      "message": "auto_build-generate",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ff76e43cef",
+      "date": "2026-06-02T18:27:50Z",
+      "message": "added_errore-register-logic",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5d3f9a7eaf",
+      "date": "2026-05-31T13:50:31Z",
+      "message": "addde_role-permissions || fixed_deploy",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "66067dc49d",
+      "date": "2026-05-31T13:43:37Z",
+      "message": "added_role_tables || logic",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1e2c6c134e",
+      "date": "2026-05-28T19:28:14Z",
+      "message": "fixed_register_under_new-roles",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "65d8d53928",
+      "date": "2026-05-26T20:38:29Z",
+      "message": "fixed_edit-employee || deleted_mock-data",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "04bbd9741c",
+      "date": "2026-05-26T20:19:46Z",
+      "message": "added_base_role",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "afcb51d884",
+      "date": "2026-05-26T19:16:18Z",
+      "message": "fidex_deploy",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0d131875bb",
+      "date": "2026-05-26T18:24:14Z",
+      "message": "fidex_deploy",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1c3131e527",
+      "date": "2026-05-26T18:21:49Z",
+      "message": "fidex_deploy",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "27b0278f37",
+      "date": "2026-05-26T18:19:40Z",
+      "message": "fidex_deploy",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a4b9c1fc27",
+      "date": "2026-05-26T18:17:47Z",
+      "message": "fidex_deploy",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f53308cdbf",
+      "date": "2026-05-26T18:14:54Z",
+      "message": "fixed_all_verticals || deleted dont-use-files",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e58054f855",
+      "date": "2026-05-21T17:52:59Z",
+      "message": "fixed_run-proj",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "49b9101a4a",
+      "date": "2026-05-20T17:10:03Z",
+      "message": "bleat",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4bef58baf0",
+      "date": "2026-05-20T16:40:39Z",
+      "message": "merge",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9bc2803685",
+      "date": "2026-05-19T15:38:44Z",
+      "message": "chore: comprehensive branch audit — feature/dlya_tebya_bleat ready for main merge",
+      "author": "glebtokar"
+    },
+    {
+      "sha": "12a22c81dc",
+      "date": "2026-05-19T15:30:28Z",
+      "message": "fix: proxy.ts default export for Next.js 16 compatibility",
+      "author": "Maxim"
+    },
+    {
+      "sha": "25651fb27c",
+      "date": "2026-05-18T15:41:05Z",
+      "message": "connected_yacht-vertical || added_custom_sidebar",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "65b539384a",
+      "date": "2026-05-17T20:34:24Z",
+      "message": "safety_migrations",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "10fd77ed57",
+      "date": "2026-05-17T18:22:43Z",
+      "message": "applied_all_merge-changes",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5496531b8a",
+      "date": "2026-05-17T18:18:27Z",
+      "message": "test_main-HEAD",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1c9bceb2a5",
+      "date": "2026-05-17T18:09:31Z",
+      "message": "merge branch 'feature/yacht-vertical' into main",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e181cb6016",
+      "date": "2026-05-17T17:08:23Z",
+      "message": "Merge branch 'feature/beauty-vertical-v2' into feature/yacht-vertical",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "424f54fb00",
+      "date": "2026-05-17T16:56:17Z",
+      "message": "deleted_bleat_beauty_from_public",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "87e23442ed",
+      "date": "2026-05-16T19:28:39Z",
+      "message": "feat(yacht): add complete yacht club vertical",
+      "author": "Maxim"
+    },
+    {
+      "sha": "19f080c49d",
+      "date": "2026-05-16T19:01:37Z",
+      "message": "Merge pull request #2 from ykr0p/feature/beauty-vertical-complete",
+      "author": "Gleb"
+    },
+    {
+      "sha": "715ed47c2f",
+      "date": "2026-05-16T18:57:06Z",
+      "message": "feat(beauty): add complete beauty vertical",
+      "author": "Maxim"
+    },
+    {
+      "sha": "56f4143b9d",
+      "date": "2026-05-16T18:52:10Z",
+      "message": "fix(beauty): merge main into feature/beauty-vertical-complete",
+      "author": "Maxim"
+    },
+    {
+      "sha": "ab1f7c96b7",
+      "date": "2026-05-16T16:35:36Z",
+      "message": "feat(beauty): complete beauty vertical implementation",
+      "author": "Maxim"
+    },
+    {
+      "sha": "208ad1b7dc",
+      "date": "2026-05-16T13:37:10Z",
+      "message": "pzdc_gleb",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b1d6286c6c",
+      "date": "2026-05-16T12:58:57Z",
+      "message": "added_gleb_files",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5d6600202a",
+      "date": "2026-05-15T08:36:03Z",
+      "message": "Initial commit from 1.zip",
+      "author": "Maxim"
+    },
+    {
+      "sha": "b51354435d",
+      "date": "2026-05-14T12:00:00Z",
+      "message": "refactor: complete missing entities, make tenant creation transactional, zero TS errors",
+      "author": "Maxim"
+    },
+    {
+      "sha": "b0f940a9eb",
+      "date": "2026-05-19T14:54:30Z",
+      "message": "fix: make next.config compatible with both webpack (dev) and Turbopack (Vercel build)",
+      "author": "Maxim"
+    },
+    {
+      "sha": "54b0d7fd9c",
+      "date": "2026-05-15T11:00:00Z",
+      "message": "fix: completely disable Turbopack via env variable and dev script",
+      "author": "Maxim"
+    },
+    {
+      "sha": "7efafbcfea",
+      "date": "2026-05-16T07:00:00Z",
+      "message": "fix: resolve Turbopack browser cache issue, configure webpack properly",
+      "author": "Maxim"
+    },
+    {
+      "sha": "502233cd2f",
+      "date": "2026-05-17T09:00:00Z",
+      "message": "fix: switch dev server to webpack to avoid Turbopack CSS crash",
+      "author": "Maxim"
+    },
+    {
+      "sha": "bb9de5e50b",
+      "date": "2026-05-18T13:30:00Z",
+      "message": "fix: zero TypeScript errors, fix 3 remaining TS issues, add logo",
+      "author": "Maxim"
+    },
+    {
+      "sha": "1d2fdb645a",
+      "date": "2026-05-19T11:00:00Z",
+      "message": "fix: resolve critical TypeScript errors across all verticals",
+      "author": "Maxim"
+    },
+    {
+      "sha": "7c55e2048b",
+      "date": "2026-05-19T11:58:27Z",
+      "message": "fix: align beauty SQL migrations with Kysely types, fix repository TS errors",
+      "author": "Maxim"
+    },
+    {
+      "sha": "211fd91c81",
+      "date": "2026-05-19T11:45:24Z",
+      "message": "feat(beauty): connect backend to UI, add sidebar navigation",
+      "author": "Maxim"
+    },
+    {
+      "sha": "6022a8c24e",
+      "date": "2026-05-19T11:33:48Z",
+      "message": "feat(beauty): expand backend with appointment, schedule, review, inventory",
+      "author": "Maxim"
+    },
+    {
+      "sha": "095b40536c",
+      "date": "2026-05-19T11:23:17Z",
+      "message": "feat(yacht): add detail pages, edit pages, equipment pages",
+      "author": "Maxim"
+    },
+    {
+      "sha": "7eb7d21228",
+      "date": "2026-05-18T20:38:16Z",
+      "message": "feat(yacht): connect yacht vertical backend with complete UI/UX",
+      "author": "Maxim"
+    },
+    {
+      "sha": "a7b7c88488",
+      "date": "2026-05-18T19:29:10Z",
+      "message": "feat: yacht vertical, landing pages, info routes, and UI updates",
+      "author": "Maxim"
+    },
+    {
+      "sha": "ab6f441f79",
+      "date": "2026-05-18T08:35:04Z",
+      "message": "лендинг фикс",
+      "author": "Maxim"
+    },
+    {
+      "sha": "5593b1e33b",
+      "date": "2026-05-14T08:45:33Z",
+      "message": "chore: trigger deployment after merge",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0821158219",
+      "date": "2026-05-14T08:36:46Z",
+      "message": "Merge remote-tracking branch 'friend/main'",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "014c7af919",
+      "date": "2026-05-14T08:20:09Z",
+      "message": "test_fork-work",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2aa7197961",
+      "date": "2026-05-14T07:08:17Z",
+      "message": "chore: trigger Vercel deployment",
+      "author": "Maxim"
+    },
+    {
+      "sha": "6ecd45f25e",
+      "date": "2026-05-14T06:34:43Z",
+      "message": "feat: add seed file with test accounts and update .env for local db",
+      "author": "glcskl"
+    },
+    {
+      "sha": "b644531e03",
+      "date": "2026-05-14T06:24:51Z",
+      "message": "fix: add consistent header to pricing and careers pages",
+      "author": "glcskl"
+    },
+    {
+      "sha": "457b49f0bf",
+      "date": "2026-05-14T05:44:27Z",
+      "message": "feat: add favicon and SEO metadata for WorkDo",
+      "author": "glcskl"
+    },
+    {
+      "sha": "46dc84a6f9",
+      "date": "2026-05-14T05:27:22Z",
+      "message": "feat: apply unified landing-style UI/UX to beauty and security verticals",
+      "author": "Maxim"
+    },
+    {
+      "sha": "a2bf197be6",
+      "date": "2026-05-14T05:27:22Z",
+      "message": "feat: apply unified landing-style UI/UX to beauty and security verticals",
+      "author": "glcskl"
+    },
+    {
+      "sha": "b8219eef34",
+      "date": "2026-05-11T11:28:37Z",
+      "message": "deleted_nav_top-btns",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fc0007e50b",
+      "date": "2026-05-11T07:18:31Z",
+      "message": "added_reg/auth-logs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3355b649c3",
+      "date": "2026-05-11T07:17:44Z",
+      "message": "fixed_crush-template-structure",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "acb3998124",
+      "date": "2026-05-10T17:07:28Z",
+      "message": "added_lost-lines_template",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "92f40b4d6e",
+      "date": "2026-05-10T16:52:15Z",
+      "message": "added_contract-page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "16abc0d7de",
+      "date": "2026-05-10T16:12:36Z",
+      "message": "fixed_search-params",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7dccb1bb45",
+      "date": "2026-05-10T16:09:25Z",
+      "message": "fixed_relation-patrol-migration",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5efdcb54fc",
+      "date": "2026-05-10T16:00:03Z",
+      "message": "added_patrol-page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "459dd040d0",
+      "date": "2026-05-09T18:24:57Z",
+      "message": "added_piblic-init-migration || deleted prisma || added_scripts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "44183d7b5f",
+      "date": "2026-05-08T06:47:49Z",
+      "message": "try_to_upd_prisma-7",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b61aac740b",
+      "date": "2026-05-08T05:46:47Z",
+      "message": "migrate_prisma -> SQL || added_script || deleted_garbage",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "026fc08ff0",
+      "date": "2026-05-07T19:33:16Z",
+      "message": "added_settings-page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5a15216158",
+      "date": "2026-05-07T18:57:38Z",
+      "message": "added_test-folder",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9c50bcceec",
+      "date": "2026-05-07T05:21:40Z",
+      "message": "added_incident-page || editing-form || addition-form",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fba586d6f5",
+      "date": "2026-05-06T07:12:28Z",
+      "message": "optimized",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "66c916db12",
+      "date": "2026-05-05T21:12:03Z",
+      "message": "fixed_build",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c27a8724f4",
+      "date": "2026-05-05T21:08:04Z",
+      "message": "renamed guard -> employee",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d39e981cef",
+      "date": "2026-05-04T09:39:06Z",
+      "message": "deleted_readme || optimized_github-branches",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "52e7b25ff1",
+      "date": "2026-05-03T18:40:17Z",
+      "message": "deleted_crashing-migrations",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a6742e0332",
+      "date": "2026-05-03T16:55:12Z",
+      "message": "fixed_register || auth -> changed order sql tables",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "072e13c883",
+      "date": "2026-05-03T15:54:09Z",
+      "message": "Brigade / Guard fix",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "67851546e6",
+      "date": "2026-05-03T15:03:26Z",
+      "message": "fixed_deploy_use-clients",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7ad55e3ba5",
+      "date": "2026-05-03T14:48:57Z",
+      "message": "pzdc_added: payment, finance, modified employees, new modal-window for employee",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0ab323e26d",
+      "date": "2026-04-27T20:02:33Z",
+      "message": "reload_db || deleted_migrations",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4281855972",
+      "date": "2026-04-25T20:27:26Z",
+      "message": "added_CIS-cities",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "09baf8e21f",
+      "date": "2026-04-24T20:45:28Z",
+      "message": "fixed_deploy",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1cd3d03cce",
+      "date": "2026-04-24T20:34:54Z",
+      "message": "pizdec_thats_red_text",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8c9d2d2b7d",
+      "date": "2026-04-21T13:40:23Z",
+      "message": "added_security-sidebar",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "df9d4c9388",
+      "date": "2026-04-20T20:58:31Z",
+      "message": "added_register-checkboxs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f27b75ff50",
+      "date": "2026-04-20T18:16:51Z",
+      "message": "/pricing_edits",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a56ac33980",
+      "date": "2026-04-20T18:09:53Z",
+      "message": "/pricing_renaming_added-new-plan",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "864daaf9e2",
+      "date": "2026-04-20T18:07:28Z",
+      "message": "about_minor-edit",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c555074cbd",
+      "date": "2026-04-20T16:43:00Z",
+      "message": "edited_document-naming",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "85795863b3",
+      "date": "2026-04-20T16:27:12Z",
+      "message": "added_offer",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "651b992b10",
+      "date": "2026-04-20T12:39:41Z",
+      "message": "edited_terms",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "91a59eeb19",
+      "date": "2026-04-20T12:08:44Z",
+      "message": "edited_description",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e066e79aaa",
+      "date": "2026-04-20T11:53:42Z",
+      "message": "added_privacy-policy_terms-sample",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fe53154e6f",
+      "date": "2026-04-19T14:39:12Z",
+      "message": "fix_meta-tags",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "386b854953",
+      "date": "2026-04-19T14:29:22Z",
+      "message": "changed_main-title",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3976211a69",
+      "date": "2026-04-19T13:15:42Z",
+      "message": "fixed_your-email_in-blog",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "de52f4fa0c",
+      "date": "2026-04-19T13:07:55Z",
+      "message": "copyright main pages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5bef6747c3",
+      "date": "2026-04-18T12:55:34Z",
+      "message": "fix_mdx",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9b5c1afcf4",
+      "date": "2026-04-18T12:38:20Z",
+      "message": "upgrade next-mdx-remote to latest",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "75c79c236f",
+      "date": "2026-04-18T12:35:00Z",
+      "message": "fix_formatCurrency",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "566cd51a0f",
+      "date": "2026-04-18T12:31:22Z",
+      "message": "add MDX blog with shadcn/ui components and Tailwind typography",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5d45a635d5",
+      "date": "2026-04-17T20:05:19Z",
+      "message": "added_comments-arrows",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cb3e8816f5",
+      "date": "2026-04-17T18:07:57Z",
+      "message": "added_admin-panel-functional",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9dc1163024",
+      "date": "2026-04-16T18:11:26Z",
+      "message": "added_blog-page || admin-panel",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "099f290eea",
+      "date": "2026-04-16T10:52:01Z",
+      "message": "added_noFill-placeholder_auth",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "13ba33eeb1",
+      "date": "2026-04-16T05:41:16Z",
+      "message": "added_google-analytics",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0831f78c99",
+      "date": "2026-04-15T12:29:11Z",
+      "message": "added_SEO_pages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "73102415ca",
+      "date": "2026-04-15T12:18:14Z",
+      "message": "eadded_logOut-btn-cookie",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "914642217f",
+      "date": "2026-04-15T11:49:55Z",
+      "message": "fixed_auth-eye",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5c8af82a8b",
+      "date": "2026-04-15T11:35:32Z",
+      "message": "fix_redirection",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8b915148f5",
+      "date": "2026-04-14T19:11:12Z",
+      "message": "nothing_work",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d9b759688d",
+      "date": "2026-04-14T18:59:39Z",
+      "message": "fix: use API route for login (JSON + Set-Cookie) instead of server action",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "df7ecf8bb3",
+      "date": "2026-04-14T18:50:49Z",
+      "message": "fix: manual JWT cookie creation in server actions for reliable auth",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5808ca6d8b",
+      "date": "2026-04-14T18:40:41Z",
+      "message": "fix: use NextAuth signIn() for both signin and auto-login",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fb80bb67fe",
+      "date": "2026-04-14T18:35:13Z",
+      "message": "fix: login uses NextAuth client-side signIn + redirect-dashboard endpoint",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0f4c8d06a2",
+      "date": "2026-04-14T18:30:31Z",
+      "message": "fix: login uses server actions instead of route handler",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "884a8c2f72",
+      "date": "2026-04-14T13:16:47Z",
+      "message": "chore: sync landing-local merge, remove temp files, update .gitignore",
+      "author": "Maxim"
+    },
+    {
+      "sha": "6755052cb8",
+      "date": "2026-04-14T13:09:30Z",
+      "message": "Merge branch 'landing-local'",
+      "author": "Maxim"
+    },
+    {
+      "sha": "437936d7e8",
+      "date": "2026-04-14T10:00:47Z",
+      "message": "docs: add WHAT_WAS_DONE — detailed summary of all implemented features",
+      "author": "Maxim"
+    },
+    {
+      "sha": "fae0fe2756",
+      "date": "2026-04-14T09:35:10Z",
+      "message": "feat: SaaS security management app — employees, time tracking, salary, estimates, reports, audit log",
+      "author": "Maxim"
+    },
+    {
+      "sha": "4b79aadca7",
+      "date": "2026-04-13T19:12:20Z",
+      "message": "fix: dashboard layout - use actual user's business instead of hardcoded BEAUTY demo",
+      "author": "Maxim"
+    },
+    {
+      "sha": "c04e9745c0",
+      "date": "2026-04-13T18:55:56Z",
+      "message": "fix: use 302 redirect instead of 307 to convert POST to GET",
+      "author": "Maxim"
+    },
+    {
+      "sha": "738fa8bcc7",
+      "date": "2026-04-13T18:50:13Z",
+      "message": "fix: auto-login uses form POST instead of fetch redirect:manual",
+      "author": "Maxim"
+    },
+    {
+      "sha": "4385edceff",
+      "date": "2026-04-13T18:17:05Z",
+      "message": "fix: use form POST for login instead of fetch with redirect:manual",
+      "author": "Maxim"
+    },
+    {
+      "sha": "b38f89acbf",
+      "date": "2026-04-13T18:03:31Z",
+      "message": "fix: credentials login - use NextAuth signIn instead of custom cookie flow",
+      "author": "Maxim"
+    },
+    {
+      "sha": "727e197df2",
+      "date": "2026-04-13T17:52:30Z",
+      "message": "modified:   .env.example",
+      "author": "Maxim"
+    },
+    {
+      "sha": "e71e1566b4",
+      "date": "2026-04-13T16:12:29Z",
+      "message": "style: update dashboard to match landing design - rounded-full nav, black gradient icons, backdrop-blur header",
+      "author": "Maxim"
+    },
+    {
+      "sha": "d9a9fe0fa8",
+      "date": "2026-04-13T15:58:57Z",
+      "message": "style: update auth pages to match landing design - rounded-3xl cards, black gradient icons, progress bar",
+      "author": "Maxim"
+    },
+    {
+      "sha": "cd3db56518",
+      "date": "2026-04-13T15:08:27Z",
+      "message": "style: update vertical icons to black gradient and slow down marquee speed",
+      "author": "Maxim"
+    },
+    {
+      "sha": "af37c5775a",
+      "date": "2026-04-13T14:42:14Z",
+      "message": "feat: landing page with interactive modals, project cards, features grid and info pages",
+      "author": "Maxim"
+    },
+    {
+      "sha": "b234146283",
+      "date": "2026-04-13T14:07:35Z",
+      "message": "feat: update landing page with interactive modals, project cards, and feature sections",
+      "author": "Maxim"
+    },
+    {
+      "sha": "aea2be65ba",
+      "date": "2026-04-13T12:24:48Z",
+      "message": "fix: make dashboard pages dynamic, fix build error on Vercel",
+      "author": "Maxim"
+    },
+    {
+      "sha": "008b93dd82",
+      "date": "2026-04-13T12:07:05Z",
+      "message": "merge: integrate UI redesign, resolve all conflicts, fix build",
+      "author": "Maxim"
+    },
+    {
+      "sha": "1a1ce48f46",
+      "date": "2026-04-13T11:04:41Z",
+      "message": "refactor: replace gradient project cards with minimal list style",
+      "author": "Maxim"
+    },
+    {
+      "sha": "483d38e318",
+      "date": "2026-04-13T10:57:50Z",
+      "message": "feat: redesign landing page with Cuberto-inspired animations",
+      "author": "Maxim"
+    },
+    {
+      "sha": "e5938c13be",
+      "date": "2026-04-13T09:55:55Z",
+      "message": "feat: WorkDo SaaS platform - complete rewrite with Apple-like design",
+      "author": "Maxim"
+    },
+    {
+      "sha": "c0eafd259b",
+      "date": "2026-04-10T12:00:17Z",
+      "message": "fixed_eyes",
+      "author": "Maxim"
+    },
+    {
+      "sha": "45a9d714ca",
+      "date": "2026-04-10T11:50:23Z",
+      "message": "fixed_registeration || duplicate_account",
+      "author": "Maxim"
+    },
+    {
+      "sha": "e1b191e4ab",
+      "date": "2026-03-28T11:08:05Z",
+      "message": "added_retry_email_code",
+      "author": "Maxim"
+    },
+    {
+      "sha": "0b017a31ec",
+      "date": "2026-03-28T10:37:53Z",
+      "message": "fix_eyeOff-eyeOn",
+      "author": "Maxim"
+    },
+    {
+      "sha": "f0183293a3",
+      "date": "2026-03-28T10:13:39Z",
+      "message": "fix_cache_after_auth",
+      "author": "Maxim"
+    },
+    {
+      "sha": "182b0952c1",
+      "date": "2026-03-27T22:41:52Z",
+      "message": "fix cloud",
+      "author": "Maxim"
+    },
+    {
+      "sha": "08117902e6",
+      "date": "2026-03-27T22:07:22Z",
+      "message": "fix_sending_code",
+      "author": "Maxim"
+    },
+    {
+      "sha": "1a580257d8",
+      "date": "2026-03-27T21:32:39Z",
+      "message": "fixed rgister",
+      "author": "Maxim"
+    },
+    {
+      "sha": "848a2d4da4",
+      "date": "2026-03-27T09:45:56Z",
+      "message": "fix_reg",
+      "author": "Maxim"
+    },
+    {
+      "sha": "02d3f06042",
+      "date": "2026-03-27T09:08:56Z",
+      "message": "reg-fix",
+      "author": "Maxim"
+    },
+    {
+      "sha": "6c1fe88aaa",
+      "date": "2026-03-24T19:40:24Z",
+      "message": "ugu",
+      "author": "Maxim"
+    },
+    {
+      "sha": "45420ea7f1",
+      "date": "2026-03-24T19:06:01Z",
+      "message": "Initial commit",
+      "author": "Maxim"
+    }
+  ]
+}
