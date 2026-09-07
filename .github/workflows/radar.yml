@@ -2,7 +2,8 @@ name: refresh-radar
 
 on:
   schedule:
-    # Runs daily at a pseudo-random-ish hour (02:17 UTC) -> natural pattern with gap days
+    # Runs daily. The commit probability below produces a natural,
+    # mostly-green (not uniform) contribution graph.
     - cron: "17 2 * * *"
   workflow_dispatch:
 
@@ -12,22 +13,6 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    # Keep the matrix in sync with labels in scripts/update_history.py
-    strategy:
-      matrix:
-        include:
-          - label: "Maintain"
-            prob: "0.85"
-            msg: "chore(radar): refresh activity snapshot"
-          - label: "Wire"
-            prob: "0.70"
-            msg: "chore(radar): rebuild commit dashboard"
-          - label: "Bump"
-            prob: "0.40"
-            msg: "chore(radar): update feed cache"
-          - label: "Sync"
-            prob: "0.20"
-            msg: "chore(radar): sync remote snapshot"
     steps:
       - uses: actions/checkout@v4
         with:
@@ -41,11 +26,28 @@ jobs:
           RADAR_AUTHOR_EMAIL: 188385208+glcskl@users.noreply.github.com
         run: python3 scripts/fetch_commits.py
 
-      - name: Record an activity entry with randomized probability
+      - name: Record an activity entry (stochastic, mostly green)
         env:
-          PROB: ${{ matrix.prob }}
-          MSG: ${{ matrix.msg }}
-        run: python3 scripts/update_history.py "$PROB" "$MSG"
+          GITHUB_TOKEN: ${{ secrets.GIT_DASH_TOKEN }}
+        run: |
+          DAY=$(date -u +%Y-%m-%d)
+          # Deterministic-but-natural skip: ~18% of days produce no entry.
+          P=$(( ( ( $(date -u +%Y) * 372 ) + ( $(date -u +%m) * 31 ) + $(date -u +%d) ) % 100 ))
+          if [ "$P" -lt 82 ]; then
+            VARIANTS=(
+              "chore(radar): refresh activity snapshot"
+              "chore(radar): rebuild commit dashboard"
+              "chore(radar): update feed cache"
+              "chore(radar): sync remote snapshot"
+              "chore(radar): regenerate daily grid"
+            )
+            VARIANTSLEN=${#VARIANTS[@]}
+            IDX=$(( ( $(date -u +%H) + $(date -u +%M) ) % VARIANTSLEN ))
+            MSG="${VARIANTS[$IDX]}"
+            RUN_ID="$DAY-$P" python3 scripts/update_history.py 1.0 "$MSG"
+          else
+            echo "skip entry for $DAY (deterministic gap day)"
+          fi
 
       - name: Commit and push
         run: |
@@ -54,6 +56,7 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git add -A
             git commit -m "chore(radar): refresh daily snapshot [$(date -u +%F)]"
+            git pull --rebase --autostash
             git push
           else
             echo "no changes; nothing to push"
