@@ -1,7 +1,127 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 577,
+  "count": 597,
   "commits": [
+    {
+      "sha": "d047331196",
+      "date": "2026-09-07T20:03:24Z",
+      "message": "feat(security): migrate contract and equipment status fields to AutocompleteField",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b0f6603fef",
+      "date": "2026-09-07T20:03:24Z",
+      "message": "feat(security): migrate incident typology fields to AutocompleteField",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f410619fb4",
+      "date": "2026-09-07T20:03:24Z",
+      "message": "feat(security): migrate shift and time-record status fields to AutocompleteField",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f96b6b3b9c",
+      "date": "2026-09-07T20:03:18Z",
+      "message": "feat(security): migrate post patrol fields to AutocompleteField",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "633881ea7f",
+      "date": "2026-09-07T20:03:18Z",
+      "message": "feat(security): migrate employee typology fields to AutocompleteField",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "75b2577735",
+      "date": "2026-09-07T20:03:17Z",
+      "message": "feat(ui): hide clear button for read-only autocomplete",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "048c919db6",
+      "date": "2026-09-07T19:23:23Z",
+      "message": "feat(ui): add clear button to autocomplete field",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "43782ab516",
+      "date": "2026-09-07T19:16:42Z",
+      "message": "docs(suggestions): document bank migration for typology fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9866f93a72",
+      "date": "2026-09-07T19:16:32Z",
+      "message": "feat(instruction-log): store instruction type in suggestion bank",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d8234fb59d",
+      "date": "2026-09-07T19:16:27Z",
+      "message": "feat(equipment): store category in suggestion bank",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d56fe6d1f6",
+      "date": "2026-09-07T19:16:22Z",
+      "message": "feat(incidents): store participant roles in suggestion bank",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3976087cb0",
+      "date": "2026-09-07T19:16:11Z",
+      "message": "feat(posts): store post schedule and type in suggestion bank",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5ea4666243",
+      "date": "2026-09-07T19:16:01Z",
+      "message": "feat(brigades): store work schedule in suggestion bank",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "20183a25d2",
+      "date": "2026-09-07T19:15:57Z",
+      "message": "feat(employees): store license types and work schedule in suggestion bank",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2784402bd6",
+      "date": "2026-09-07T19:15:51Z",
+      "message": "fix(ui): show option label in autocomplete input after selection",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4b6c8feb49",
+      "date": "2026-09-07T19:15:46Z",
+      "message": "feat(suggestions): registry and presets for remaining typology fields",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "22ad89a606",
+      "date": "2026-09-07T15:39:23Z",
+      "message": "docs(suggestions): document SuggestionField, registry and key/label mapping",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c5289a2808",
+      "date": "2026-09-07T15:39:16Z",
+      "message": "feat(security): migrate typology fields to SuggestionField bank",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e2ef12c3a4",
+      "date": "2026-09-07T15:38:58Z",
+      "message": "refactor(suggestions): shared countSuggestionUsage registry",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "17f4b020a2",
+      "date": "2026-09-07T15:38:43Z",
+      "message": "refactor(db): deterministic list sorting via collateC",
+      "author": "Ykr0p"
+    },
     {
       "sha": "e0162cb179",
       "date": "2026-09-07T13:14:01Z",
