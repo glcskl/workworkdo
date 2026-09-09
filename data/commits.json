@@ -1,7 +1,79 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 597,
+  "count": 609,
   "commits": [
+    {
+      "sha": "0cdb99b6c4",
+      "date": "2026-09-08T20:09:18Z",
+      "message": "style(security): remove breadcrumbs from employee detail page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "80ef057d90",
+      "date": "2026-09-08T20:09:12Z",
+      "message": "fix(security): eliminate hydration mismatch from non-deterministic dates",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bbf41316aa",
+      "date": "2026-09-08T15:44:03Z",
+      "message": "fix(security): return fresh distinct employee positions for filter",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0a9224ee6d",
+      "date": "2026-09-08T15:43:56Z",
+      "message": "refactor(security): load brigades and client tags without stale cache",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7fcdcbae19",
+      "date": "2026-09-08T15:41:37Z",
+      "message": "feat(ui): convert CheckboxDropdown to searchable combobox filter",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8ce9ac0294",
+      "date": "2026-09-08T14:34:48Z",
+      "message": "chore(auth): remove debug logs from auth and registration flows",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d82ed1ea2a",
+      "date": "2026-09-08T14:32:05Z",
+      "message": "style(security): remove redundant section descriptions from employee forms",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "37169963e5",
+      "date": "2026-09-08T14:31:58Z",
+      "message": "fix(security): stabilize selection toolbars and add invert selection to brigades",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1d853d0701",
+      "date": "2026-09-08T14:31:33Z",
+      "message": "feat(security): restore employee bulk actions for object, post, status, briefing and responsible",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a37fe107d2",
+      "date": "2026-09-08T14:31:27Z",
+      "message": "fix(auth): allow linking Google account to password-registered users",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1883923185",
+      "date": "2026-09-08T13:37:01Z",
+      "message": "docs(suggestions): document suggestion storage kinds",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "40484ba904",
+      "date": "2026-09-08T13:37:01Z",
+      "message": "feat(suggestions): declare SuggestionSource storage kind",
+      "author": "Ykr0p"
+    },
     {
       "sha": "d047331196",
       "date": "2026-09-07T20:03:24Z",
