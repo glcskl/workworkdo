@@ -1,7 +1,61 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 609,
+  "count": 618,
   "commits": [
+    {
+      "sha": "3168df42bc",
+      "date": "2026-09-09T21:26:07Z",
+      "message": "feat(security): resend invitation when edited employee email changes",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7fbfbd13d8",
+      "date": "2026-09-09T21:25:55Z",
+      "message": "feat(security): add role invite block to employee create form",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a9cfc3c949",
+      "date": "2026-09-09T21:25:48Z",
+      "message": "fix(dashboard): pin scaffold to viewport to stop native page scroll",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "206f94a0bd",
+      "date": "2026-09-09T20:44:37Z",
+      "message": "fix(security): stabilize brigade form reset and load effects",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4820fbf38c",
+      "date": "2026-09-09T20:44:33Z",
+      "message": "feat(security): guard hard delete by work history and block accounts on termination",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "70efafe0a2",
+      "date": "2026-09-09T20:43:54Z",
+      "message": "fix(security): make position badge colors deterministic for hydration",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ba9484e8c0",
+      "date": "2026-09-09T20:43:39Z",
+      "message": "fix(shared): qualify suggestion usage count with tenant schema",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cda5c991d6",
+      "date": "2026-09-09T13:21:18Z",
+      "message": "feat(ui): redesign checkbox filter as trigger button with stacked bulk actions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0ad6c1c19a",
+      "date": "2026-09-09T09:25:57Z",
+      "message": "fix(marketing): align landing and solutions with implemented functionality",
+      "author": "Ykr0p"
+    },
     {
       "sha": "0cdb99b6c4",
       "date": "2026-09-08T20:09:18Z",
