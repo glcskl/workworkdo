@@ -1,7 +1,127 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 618,
+  "count": 638,
   "commits": [
+    {
+      "sha": "6ec02069e8",
+      "date": "2026-09-10T21:21:47Z",
+      "message": "feat(security): add single and multi selects for contracts, equipment and instructions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d39e3577b0",
+      "date": "2026-09-10T21:21:41Z",
+      "message": "feat(security): add contract search enriched with client names",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5e1d2fd75e",
+      "date": "2026-09-10T21:20:16Z",
+      "message": "refactor(security): extract shared useEntitySearch hook for entity selects",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9678a19340",
+      "date": "2026-09-10T20:05:12Z",
+      "message": "fix(security): keep multi-select header controls from jumping",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "91468aa84f",
+      "date": "2026-09-10T20:05:09Z",
+      "message": "feat(security): brigades delete/archive in row dropdown and bulk bar",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b3c5484db3",
+      "date": "2026-09-10T20:05:05Z",
+      "message": "feat(security): hard-delete brigades without history, guarded against history",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6d11529dff",
+      "date": "2026-09-10T19:04:40Z",
+      "message": "feat(security): import/export for objects, clients and equipment",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "02017f3587",
+      "date": "2026-09-10T19:04:31Z",
+      "message": "feat(security): filter brigades by schedule and specialization",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "defebaacbc",
+      "date": "2026-09-10T19:04:15Z",
+      "message": "refactor(security): extract shared CSV + import/export component, migrate employees & brigades",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "215d32f333",
+      "date": "2026-09-10T16:21:09Z",
+      "message": "style(security): replace employee status tabs with count-aware select",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7742aa34b7",
+      "date": "2026-09-10T16:16:12Z",
+      "message": "feat(security): multi-select category filter for incidents, always-visible filters",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4c5f862f40",
+      "date": "2026-09-10T16:15:38Z",
+      "message": "style(security): wrap list search and filters into shared box like employees",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4e6ef6f23e",
+      "date": "2026-09-10T15:08:37Z",
+      "message": "docs(tenant): document the unified verification gate",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ecbb4e65e9",
+      "date": "2026-09-10T15:08:31Z",
+      "message": "refactor(tenant): unify schema verification into a single gate",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4fa301151c",
+      "date": "2026-09-10T13:56:37Z",
+      "message": "fix(security): dedupe employee positions in list filter",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cf71ced40a",
+      "date": "2026-09-10T13:56:28Z",
+      "message": "fix(security): store position keys on employee import",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7d35db55dd",
+      "date": "2026-09-10T13:56:23Z",
+      "message": "fix(db): normalize legacy employee position labels to keys",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b144867cf0",
+      "date": "2026-09-10T13:34:38Z",
+      "message": "feat(security): export employee list to CSV",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "494f3978f4",
+      "date": "2026-09-10T13:34:25Z",
+      "message": "style(security): unify create/import/export toolbar across list headers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "686cd2d63a",
+      "date": "2026-09-10T13:33:47Z",
+      "message": "feat(security): remove role invite entry point from employee list",
+      "author": "Ykr0p"
+    },
     {
       "sha": "3168df42bc",
       "date": "2026-09-09T21:26:07Z",
