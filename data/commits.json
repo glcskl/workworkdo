@@ -1,7 +1,13 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 654,
+  "count": 655,
   "commits": [
+    {
+      "sha": "6586f93fa7",
+      "date": "2026-09-13T09:52:18Z",
+      "message": "fix(cache): bump og-image and favicon urls with ?v=2 to bust stale cached previews",
+      "author": "Maxim"
+    },
     {
       "sha": "ee426cd52b",
       "date": "2026-09-12T21:31:36Z",
