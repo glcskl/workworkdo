@@ -1,7 +1,103 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 638,
+  "count": 654,
   "commits": [
+    {
+      "sha": "ee426cd52b",
+      "date": "2026-09-12T21:31:36Z",
+      "message": "feat(security): add bulk selection to incidents and equipment lists",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6692b1a7d8",
+      "date": "2026-09-12T20:37:59Z",
+      "message": "Merge branch 'main' of origin: add new branding (favicon set, PWA icons, og-banner)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "122fe2c663",
+      "date": "2026-09-12T20:34:36Z",
+      "message": "feat(security): make brigades/objects/posts/incidents detail pages read-only browsable",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0d19fef250",
+      "date": "2026-09-12T20:34:29Z",
+      "message": "docs: add public offer and user consent, update privacy policy",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "628ee88776",
+      "date": "2026-09-12T19:36:28Z",
+      "message": "chore(branding): replace logo everywhere — new favicon set, apple-touch-icon, PWA icons and 1200x630 og:image banner",
+      "author": "Maxim"
+    },
+    {
+      "sha": "aa3576e7b2",
+      "date": "2026-09-12T18:40:57Z",
+      "message": "feat(telegram): enrich error notifications with user and request context",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e95936bcbc",
+      "date": "2026-09-12T17:08:43Z",
+      "message": "fix(security): guard brigade form submit against undefined watched name",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f5a5fd7b3e",
+      "date": "2026-09-12T08:35:17Z",
+      "message": "chore(deps): refresh browserslist database (caniuse-lite, baseline-browser-mapping)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c1bdab0293",
+      "date": "2026-09-12T08:34:25Z",
+      "message": "fix(components): open search dropdowns only on user-initiated focus",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9a83a18faa",
+      "date": "2026-09-12T08:34:19Z",
+      "message": "feat(security): use shared EmployeeMultiSelect in instruction log form",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a7e55b26ef",
+      "date": "2026-09-12T08:34:14Z",
+      "message": "style(security): move time-records filters directly under page header",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7abec5cd44",
+      "date": "2026-09-12T08:34:09Z",
+      "message": "style(security): unify contracts filters and table with employees layout",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7c3b7bcb2f",
+      "date": "2026-09-12T08:33:56Z",
+      "message": "feat(security): bulk update status, group and delete for objects and posts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0a065ff049",
+      "date": "2026-09-12T08:33:32Z",
+      "message": "feat(security): bulk update status, tags and delete for clients",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3b5051daf6",
+      "date": "2026-09-11T08:17:16Z",
+      "message": "fix(landing): always highlight home on the landing page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "893e4c29bd",
+      "date": "2026-09-11T08:17:16Z",
+      "message": "fix(landing): notify subscribers on same-tab storage writes",
+      "author": "Ykr0p"
+    },
     {
       "sha": "6ec02069e8",
       "date": "2026-09-10T21:21:47Z",
