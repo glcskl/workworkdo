@@ -1,0 +1,57 @@
+name: refresh-workworkdo
+
+on:
+  schedule:
+    # Runs 3x daily at different hours -> solid dark-green contribution
+    # graph (3 commits/day, no skip days).
+    - cron: "17 3,11,19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Fetch commits and rebuild dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_DASH_TOKEN }}
+          TARGET_REPO: ykr0p/ykr0p-new_arch_workdo_w
+          RADAR_AUTHOR_NAME: glcskl
+          RADAR_AUTHOR_EMAIL: 188385208+glcskl@users.noreply.github.com
+        run: python3 scripts/fetch_commits.py
+
+      - name: Record an activity entry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_DASH_TOKEN }}
+        run: |
+          DAY=$(date -u +%Y-%m-%d)
+          VARIANTS=(
+            "chore(workworkdo): refresh activity snapshot"
+            "chore(workworkdo): rebuild commit dashboard"
+            "chore(workworkdo): update feed cache"
+            "chore(workworkdo): sync remote snapshot"
+            "chore(workworkdo): regenerate daily grid"
+          )
+          VARIANTSLEN=${#VARIANTS[@]}
+          IDX=$(( ( $(date -u +%H) + $(date -u +%M) ) % VARIANTSLEN ))
+          MSG="${VARIANTS[$IDX]}"
+          RUN_ID="$DAY-$(date -u +%H%M)" python3 scripts/update_history.py 1.0 "$MSG"
+
+      - name: Commit and push
+        run: |
+          git config user.name "glcskl"
+          git config user.email "188385208+glcskl@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore(workworkdo): refresh activity snapshot [$(date -u +%F)]"
+            git pull --rebase --autostash
+            git push
+          else
+            echo "no changes; nothing to push"
+          fi

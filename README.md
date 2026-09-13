@@ -1,8 +1,8 @@
-# commit-radar
+# workworkdo
 
-A daily-updated dashboard that watches the commit activity of a private work
+A 3x-daily-updated dashboard that watches the commit activity of a private work
 repository and renders it as a GitHub-style contribution grid plus a live
-commit feed.
+commit feed. It also keeps the owner's contribution graph solid green.
 
 - **data/commits.json** — cached snapshot of the latest commits (source: `ykr0p/ykr0p-new_arch_workdo_w`).
 - **_site/index.html** — the generated dashboard (grid + commit history + authors).
@@ -10,15 +10,14 @@ commit feed.
 
 ## How it works
 
-A scheduled GitHub Actions workflow (`refresh-radar`) runs daily. It:
+A scheduled GitHub Actions workflow (`refresh-workworkdo`) runs 3x a day. It:
 
 1. Calls the GitHub Commits API for the target repo (private → needs a token).
 2. Regenerates `_site/index.html` and `data/commits.json`.
-3. With a configurable probability writes a row to `data/history.csv`, then pushes the snapshot.
+3. Writes a row to `data/history.csv` on every run, then pushes the snapshot.
 
-Because pushes only happen when `git status --porcelain` reports changes and the
-history write is stochastic, the contribution graph stays mostly (but not
-uniformly) green while every commit carries actual dashboard data.
+Every scheduled run produces a commit (3/day, no gap days), so the contribution
+graph stays a solid dark green while each commit carries actual dashboard data.
 
 ## Env / secrets
 
