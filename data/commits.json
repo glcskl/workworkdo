@@ -1,7 +1,19 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 655,
+  "count": 657,
   "commits": [
+    {
+      "sha": "ad3aaedb37",
+      "date": "2026-09-13T10:23:04Z",
+      "message": "fix(security): use const for unchanged restored counter in equipment import",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9192de5fef",
+      "date": "2026-09-13T10:22:58Z",
+      "message": "fix(security): restore missing Building2 icon import in equipment list",
+      "author": "Ykr0p"
+    },
     {
       "sha": "6586f93fa7",
       "date": "2026-09-13T09:52:18Z",
