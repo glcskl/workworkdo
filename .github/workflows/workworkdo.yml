@@ -2,9 +2,9 @@ name: refresh-workworkdo
 
 on:
   schedule:
-    # Runs 3x daily at different hours -> solid dark-green contribution
-    # graph (3 commits/day, no skip days).
-    - cron: "17 3,11,19 * * *"
+    # Runs 4x daily, each run pushes multiple commits
+    # -> ~12 commits/day solid dark-green contribution graph.
+    - cron: "17 3,8,13,18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -26,10 +26,12 @@ jobs:
           RADAR_AUTHOR_EMAIL: 188385208+glcskl@users.noreply.github.com
         run: python3 scripts/fetch_commits.py
 
-      - name: Record an activity entry
+      - name: Record 3 commits per run
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_DASH_TOKEN }}
         run: |
+          git config user.name "glcskl"
+          git config user.email "188385208+glcskl@users.noreply.github.com"
           DAY=$(date -u +%Y-%m-%d)
           VARIANTS=(
             "chore(workworkdo): refresh activity snapshot"
@@ -37,21 +39,20 @@ jobs:
             "chore(workworkdo): update feed cache"
             "chore(workworkdo): sync remote snapshot"
             "chore(workworkdo): regenerate daily grid"
+            "chore(workworkdo): bump workdo radar"
+            "chore(workworkdo): refresh metadata"
+            "chore(workworkdo): update dashboard assets"
           )
           VARIANTSLEN=${#VARIANTS[@]}
-          IDX=$(( ( $(date -u +%H) + $(date -u +%M) ) % VARIANTSLEN ))
-          MSG="${VARIANTS[$IDX]}"
-          RUN_ID="$DAY-$(date -u +%H%M)" python3 scripts/update_history.py 1.0 "$MSG"
-
-      - name: Commit and push
-        run: |
-          git config user.name "glcskl"
-          git config user.email "188385208+glcskl@users.noreply.github.com"
-          if [ -n "$(git status --porcelain)" ]; then
+          for i in 1 2 3; do
+            IDX=$(( ( $(date -u +%s) / 60 + i ) % VARIANTSLEN ))
+            MSG="${VARIANTS[$IDX]}"
+            RUN_ID="$DAY-$i-$(date -u +%H%M)" python3 scripts/update_history.py 1.0 "$MSG"
             git add -A
-            git commit -m "chore(workworkdo): refresh activity snapshot [$(date -u +%F)]"
-            git pull --rebase --autostash
-            git push
-          else
-            echo "no changes; nothing to push"
-          fi
+            git commit -q -m "$MSG"
+          done
+
+      - name: Push
+        run: |
+          git pull --rebase --autostash
+          git push
