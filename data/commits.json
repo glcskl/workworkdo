@@ -1,7 +1,13 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 667,
+  "count": 668,
   "commits": [
+    {
+      "sha": "4a8afe6ec7",
+      "date": "2026-09-15T17:21:00Z",
+      "message": "feat(dashboard): add mobile drawer navigation and responsive content shell",
+      "author": "Ykr0p"
+    },
     {
       "sha": "8f5ae9e54b",
       "date": "2026-09-14T09:42:21Z",
