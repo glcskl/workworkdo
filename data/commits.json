@@ -1,7 +1,43 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 670,
+  "count": 676,
   "commits": [
+    {
+      "sha": "62325ecbdd",
+      "date": "2026-09-16T17:52:43Z",
+      "message": "fix(landing): show 24/7 support counter on security vertical",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "67807e223f",
+      "date": "2026-09-16T17:52:39Z",
+      "message": "refactor(landing): extract shared animation components to src/landing/animations",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4cdabe0ca1",
+      "date": "2026-09-16T17:26:50Z",
+      "message": "docs(agents): add architecture hard rules and consolidate marketing UI path",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5527b3b639",
+      "date": "2026-09-16T17:26:33Z",
+      "message": "refactor(marketing): consolidate pricing-grid into components/marketing",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e8b1a5cf86",
+      "date": "2026-09-16T16:59:23Z",
+      "message": "refactor(security): route all data access through service/repository layers in actions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c594a6bd1f",
+      "date": "2026-09-16T16:59:18Z",
+      "message": "refactor(db): keep pool lifecycle logs in dev and drop process.exit on idle client error",
+      "author": "Ykr0p"
+    },
     {
       "sha": "09510abc4a",
       "date": "2026-09-16T13:17:43Z",
