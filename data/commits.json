@@ -1,7 +1,61 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 676,
+  "count": 685,
   "commits": [
+    {
+      "sha": "0320f13085",
+      "date": "2026-09-16T22:27:50Z",
+      "message": "test(tenants): add vitest harness with unit, coverage and parallelized integration tests",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b6e0b77e92",
+      "date": "2026-09-16T22:27:41Z",
+      "message": "fix(tenants): strip client-controlled tenant headers from proxied requests",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e14945d3bb",
+      "date": "2026-09-16T22:27:38Z",
+      "message": "refactor(migrations): split auto-running CLI entrypoints from importable migrator logic",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "475206334c",
+      "date": "2026-09-16T22:27:18Z",
+      "message": "feat(db): make pool size and connection timeout overridable via env",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fad0eb8e1e",
+      "date": "2026-09-16T21:32:43Z",
+      "message": "docs: update tenant resolution and request tracing docs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e9e8aba983",
+      "date": "2026-09-16T21:32:37Z",
+      "message": "fix(proxy): strip client tenant headers and expose request path for tracing",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "769d89c523",
+      "date": "2026-09-16T21:31:37Z",
+      "message": "fix(tenants): derive tenant only from session memberships",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "89d4cec7f0",
+      "date": "2026-09-16T21:31:34Z",
+      "message": "feat(observability): add PII-safe request tracing",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2316573376",
+      "date": "2026-09-16T21:31:31Z",
+      "message": "fix(tenants): freeze TenantContext to prevent silent mutation",
+      "author": "Ykr0p"
+    },
     {
       "sha": "62325ecbdd",
       "date": "2026-09-16T17:52:43Z",
