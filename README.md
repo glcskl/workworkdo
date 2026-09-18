@@ -30,6 +30,24 @@ graph stays a solid dark green while each commit carries actual dashboard data.
 The workflow uses the secret `GIT_DASH_TOKEN` (a PAT with read access to the
 target repo) to fetch commits.
 
+## Safety net: ensure_green
+
+If the scheduled Actions workflow ever misses a day (no commits authored by
+`RADAR_AUTHOR_EMAIL` on `main`), the contribution-cell for that day goes dark.
+`scripts/ensure_green.py` fixes this: it scans the last `LOOKBACK_DAYS`
+(default 60), and for every empty day it creates a backdated commit (author
+date = that day) with a real change to `data/history.csv`, then pushes — so the
+cell stays green no matter what. GitHub colours cells by author date, so a
+backdated commit pushed now fills the matching past day.
+
+```bash
+python3 scripts/ensure_green.py --dry-run            # preview
+python3 scripts/ensure_green.py --lookback 60        # fill empty days + push
+```
+
+On macOS it is scheduled twice a day (00:15 and 23:45) via the LaunchAgent
+`~/Library/LaunchAgents/com.glcskl.workworkdo-ensure-green.plist`.
+
 ## Local run
 
 ```bash
