@@ -1,7 +1,103 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 702,
+  "count": 718,
   "commits": [
+    {
+      "sha": "3d2df1975f",
+      "date": "2026-09-22T20:39:50Z",
+      "message": "fix(security): harden salary repo write args, drop free-form params spread",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e369921b49",
+      "date": "2026-09-22T20:39:49Z",
+      "message": "fix(security): tenant-scope photo upload routes, drop unused DELETE handlers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4770c558da",
+      "date": "2026-09-22T20:39:19Z",
+      "message": "fix(security): remove dead auto-login route (password-in-URL entry point)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8c1a55424b",
+      "date": "2026-09-22T20:10:16Z",
+      "message": "﻿docs: record non-npm xlsx sourcing and integrity hash in PROJECT_RULES",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2077a1b131",
+      "date": "2026-09-22T20:10:09Z",
+      "message": "﻿fix(ui): close mobile drawer during render instead of in effect (react-hooks/set-state-in-effect)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "13dbcc1011",
+      "date": "2026-09-22T20:10:00Z",
+      "message": "﻿fix(deps): upgrade vulnerable runtime dependencies (next 16.3.6, next-auth beta.32, @auth/core 0.41.3, sharp 0.35.4, xlsx 0.20.3 from SheetJS CDN)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "49636d6bf9",
+      "date": "2026-09-22T19:08:32Z",
+      "message": "﻿docs: two-tier per-IP global rate limit in deployment/security docs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1a15c792fd",
+      "date": "2026-09-22T19:03:51Z",
+      "message": "chore(docs): drop leftover root README",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8561eb0b4b",
+      "date": "2026-09-22T19:03:44Z",
+      "message": "test(e2e): prove per-IP tiers split by session cookie",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b8cba4fc01",
+      "date": "2026-09-22T19:03:36Z",
+      "message": "test(unit): cover session-cookie tiers and cookie detection",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "af2a58f493",
+      "date": "2026-09-22T19:03:30Z",
+      "message": "feat(security): two-tier per-IP global rate limit",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3798c243fa",
+      "date": "2026-09-22T18:29:23Z",
+      "message": "chore(tooling): stop tsconfig/next-env drift across e2e dist dirs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "47d06810ea",
+      "date": "2026-09-22T18:29:15Z",
+      "message": "fix(ui): friendly rate-limit error pages, no Telegram paging",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8a57838165",
+      "date": "2026-09-22T18:29:05Z",
+      "message": "docs(deployment): document client IP handling and rate-limit layers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bbd36cbf49",
+      "date": "2026-09-22T18:28:57Z",
+      "message": "feat(security): per-user action rate limiting (layers 1 & 3)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c35ef2cfd7",
+      "date": "2026-09-22T18:28:46Z",
+      "message": "fix(proxy): env-aware client IP and full-flow Redis rate limiting",
+      "author": "Ykr0p"
+    },
     {
       "sha": "caf6cbfef0",
       "date": "2026-09-22T06:32:14Z",
