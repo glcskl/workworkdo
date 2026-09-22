@@ -1,7 +1,109 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 685,
+  "count": 702,
   "commits": [
+    {
+      "sha": "caf6cbfef0",
+      "date": "2026-09-22T06:32:14Z",
+      "message": "test(e2e): cover the bcrypt result and tenant-data spoof mutations",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ca8f7904b2",
+      "date": "2026-09-22T06:32:14Z",
+      "message": "test(e2e): assert tenant data isolation via seeded clients and employees",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2a77936a89",
+      "date": "2026-09-22T06:32:14Z",
+      "message": "test(e2e): pin NextAuth base URL for e2e servers and add per-tenant data fixtures",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a990d753b5",
+      "date": "2026-09-21T22:00:09Z",
+      "message": "docs(rules): document e2e configs, invariants and mutation testing",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0e1a9b32ee",
+      "date": "2026-09-21T22:00:09Z",
+      "message": "test(e2e): add mutation-testing harness - 5 mutations, every targeted spec killed",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2ba27c57ce",
+      "date": "2026-09-21T22:00:09Z",
+      "message": "fix(e2e): opt into insecure NextAuth cookies only on the isolated e2e database",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d6eebed468",
+      "date": "2026-09-21T22:00:02Z",
+      "message": "chore(e2e): run specs against a real next build+start server (prod config, isolated dist dir)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "41fc6f3886",
+      "date": "2026-09-21T21:59:55Z",
+      "message": "test(e2e): assert login DB writes, session cookie and tenant-data isolation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8bfd900c57",
+      "date": "2026-09-21T20:25:07Z",
+      "message": "docs(rules): document server-action form submission pattern",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f88ce1795e",
+      "date": "2026-09-21T20:25:01Z",
+      "message": "fix(forms): allow repeated submits in server-action forms",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bd75e7d90a",
+      "date": "2026-09-21T20:24:55Z",
+      "message": "test(e2e): cover login rate limiting",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "59cf7b0f0f",
+      "date": "2026-09-21T20:24:50Z",
+      "message": "feat(security): add opt-in in-memory rate-limit fallback",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "18e7d5117c",
+      "date": "2026-09-21T20:24:41Z",
+      "message": "test(e2e): add auth and tenant-isolation specs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "168d1d10d3",
+      "date": "2026-09-21T20:24:33Z",
+      "message": "chore(e2e): add playwright e2e harness with isolated db and dev server",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "444170dc10",
+      "date": "2026-09-21T17:31:57Z",
+      "message": "docs(migrations): cluster-state guard rules (Rules 1-3, allowlist = 0)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "544d925c14",
+      "date": "2026-09-21T17:30:23Z",
+      "message": "test(migrations): dirty-cluster tripwire + guard linter + public verify",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d374099011",
+      "date": "2026-09-21T17:29:47Z",
+      "message": "fix(migrations): scope cluster-change guards to current_schema",
+      "author": "Ykr0p"
+    },
     {
       "sha": "0320f13085",
       "date": "2026-09-16T22:27:50Z",
