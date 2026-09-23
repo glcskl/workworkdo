@@ -1,7 +1,79 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 723,
+  "count": 735,
   "commits": [
+    {
+      "sha": "55ecb385e2",
+      "date": "2026-09-23T19:36:35Z",
+      "message": "﻿refactor(auth): remove unused email-link password reset flow",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "57f0f78116",
+      "date": "2026-09-23T19:36:27Z",
+      "message": "﻿refactor(code): delete unused components, fix stale docs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cdae11001a",
+      "date": "2026-09-23T19:36:18Z",
+      "message": "﻿chore(deps): drop unused packages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0a827250cc",
+      "date": "2026-09-23T18:59:41Z",
+      "message": "﻿chore(assets): remove duplicate favicon.png, refresh icon docs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9a3fa9c9a9",
+      "date": "2026-09-23T18:59:37Z",
+      "message": "﻿fix(ui): return dashboard content to the sidebar edge",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "569f08c26f",
+      "date": "2026-09-23T18:52:45Z",
+      "message": "﻿docs(security): refresh report after SCA overrides",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "87cf8adacb",
+      "date": "2026-09-23T18:52:40Z",
+      "message": "﻿fix(deps): close SCA transitives via npm overrides",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "645330e9ba",
+      "date": "2026-09-23T18:01:46Z",
+      "message": "docs(security): mark kysely and uuid CVEs resolved, refresh scan numbers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "236f59960b",
+      "date": "2026-09-23T18:01:37Z",
+      "message": "fix(deps): upgrade kysely to 0.28.17, pin uuid to 11.1.1, close two CVEs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9ca9538989",
+      "date": "2026-09-23T17:51:24Z",
+      "message": "docs(security): refresh scan report after nodemailer fix and second trivy pass",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9f6d17ea89",
+      "date": "2026-09-23T17:51:13Z",
+      "message": "fix(tests): make rate-limiter unit tests deterministic in full runs",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "94631c107f",
+      "date": "2026-09-23T17:51:04Z",
+      "message": "fix(deps): upgrade nodemailer to 10.x, pin @auth/core, add vite and solve peer-deps",
+      "author": "Ykr0p"
+    },
     {
       "sha": "33cc0c5a99",
       "date": "2026-09-22T21:46:50Z",
