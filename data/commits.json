@@ -1,7 +1,157 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 738,
+  "count": 763,
   "commits": [
+    {
+      "sha": "a2e0bde38f",
+      "date": "2026-09-26T20:59:25Z",
+      "message": "perf(security): parallelize page queries and optimize audit log enrichment and brigade stats",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "98e8c79913",
+      "date": "2026-09-26T20:49:07Z",
+      "message": "perf(security): optimize audit-log with scoped distinct queries and batch enrichment",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "44216e9376",
+      "date": "2026-09-26T20:38:01Z",
+      "message": "perf(security): eliminate N+1 salary waterfall with batch query and index range scan",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c841674667",
+      "date": "2026-09-26T20:26:27Z",
+      "message": "perf(security): complete Stage 3 actions migration for zero-overhead SSR",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "467214c33a",
+      "date": "2026-09-26T20:26:16Z",
+      "message": "perf(security): migrate core actions to requireSecurityTenantQuery (Stage 2)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "62b2723d2c",
+      "date": "2026-09-26T20:26:08Z",
+      "message": "feat(rate-limit): split read and write rate limits with anti-spoofing RPC header",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "19ec53f2bf",
+      "date": "2026-09-26T18:55:27Z",
+      "message": "fix(security): resolve shift typing debt, add mapper with join and handle load errors",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fe222b9524",
+      "date": "2026-09-26T18:54:59Z",
+      "message": "perf(security): add lightweight lookup actions for guards, posts and objects",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "54f4c332a2",
+      "date": "2026-09-26T18:21:30Z",
+      "message": "chore(perf): add quick audit and report npm scripts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7c56b6c83d",
+      "date": "2026-09-26T18:21:18Z",
+      "message": "perf(audit): add route tiers, CDP cold cache and worker concurrency",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b420c36a74",
+      "date": "2026-09-26T12:21:22Z",
+      "message": "perf(security): stream the shifts shell and fetch other months on demand",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "64210b0505",
+      "date": "2026-09-26T12:21:12Z",
+      "message": "test(rate-limit): cover the fail-open paths of the single-round-trip limiter",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "cc3a8a0ed2",
+      "date": "2026-09-26T11:18:39Z",
+      "message": "docs(perf): record the rate-limiter root cause and the shifts results",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "20be56ba85",
+      "date": "2026-09-26T11:18:39Z",
+      "message": "chore(perf): read the audit base URL from PERF_BASE_URL",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c480b14857",
+      "date": "2026-09-26T11:18:39Z",
+      "message": "perf(rate-limit): do the limiter check in one Upstash round-trip",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4b0c1a81e3",
+      "date": "2026-09-26T11:18:29Z",
+      "message": "perf(rate-limit): check both action keys concurrently",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0dfb9fa239",
+      "date": "2026-09-26T11:18:29Z",
+      "message": "perf(tenants): resolve memberships once per request",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4398aba6c6",
+      "date": "2026-09-26T11:18:22Z",
+      "message": "fix(platform): log exactly one tenant trace per request",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "71548d84da",
+      "date": "2026-09-26T11:18:21Z",
+      "message": "fix(security): run shifts reads concurrently and unblock the heading paint",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0ba2de66ba",
+      "date": "2026-09-25T21:49:00Z",
+      "message": "chore(tooling): track Serena project config",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5183d7a5d2",
+      "date": "2026-09-25T21:48:53Z",
+      "message": "docs(perf): record Block 1 results and measurement workflow",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9e047164b2",
+      "date": "2026-09-25T21:43:45Z",
+      "message": "chore(perf): add SSR render-time and CLS audit tooling",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "92badf1f4c",
+      "date": "2026-09-25T21:43:35Z",
+      "message": "fix(security): parallelize dashboard SSR reads and ship stats in first paint",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d8633fb0c0",
+      "date": "2026-09-25T21:43:29Z",
+      "message": "fix(auth): stop gating auth LCP behind hydration animation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b32086417b",
+      "date": "2026-09-25T21:43:26Z",
+      "message": "fix(perf): load Inter once with Cyrillic subset",
+      "author": "Ykr0p"
+    },
     {
       "sha": "739a410c7c",
       "date": "2026-09-25T15:56:30Z",
