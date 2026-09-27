@@ -1,7 +1,19 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 763,
+  "count": 765,
   "commits": [
+    {
+      "sha": "e84719eefd",
+      "date": "2026-09-27T19:07:08Z",
+      "message": "feat(analytics): add Yandex Metrika counter with SPA route tracking",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4ccb00ea2e",
+      "date": "2026-09-27T18:56:34Z",
+      "message": "docs(perf): update PERF_REPORT.md with full 83-page audit results and add core tier banner",
+      "author": "Ykr0p"
+    },
     {
       "sha": "a2e0bde38f",
       "date": "2026-09-26T20:59:25Z",
