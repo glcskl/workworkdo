@@ -1,7 +1,115 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 765,
+  "count": 783,
   "commits": [
+    {
+      "sha": "cb67037646",
+      "date": "2026-09-29T06:45:44Z",
+      "message": "perf(estimates): fix CLS and data loading on estimates edit page, achieve 100% green CWV",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ab8606d1e7",
+      "date": "2026-09-28T20:57:38Z",
+      "message": "docs: update PERF_REPORT.md with block 7 full 83-page audit results",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "952e35c2ef",
+      "date": "2026-09-28T19:25:03Z",
+      "message": "chore: remove legacy text notes after migrating to .project",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "aff671f165",
+      "date": "2026-09-28T19:11:43Z",
+      "message": "docs: distribute optimization, security and roadmap docs into .project",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "76d1ff1443",
+      "date": "2026-09-28T19:00:32Z",
+      "message": "docs(project): initialize project tracking documentation (CHANGELOG, STATE, BACKLOG, DECISIONS)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6b1883410c",
+      "date": "2026-09-28T18:58:20Z",
+      "message": "chore(claude): add security permissions denying env file access",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1bfccf793f",
+      "date": "2026-09-28T18:55:17Z",
+      "message": "docs(perf): document Blocks 5 and 6 optimization results in PERF_REPORT.md",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5ce1fc237e",
+      "date": "2026-09-28T18:53:41Z",
+      "message": "perf(landing): remove above-the-fold opacity: 0 and eliminate animation delay on hero headers",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "097e41a3cc",
+      "date": "2026-09-28T18:51:21Z",
+      "message": "perf(security): eliminate edit-form spinner waterfalls via server preload and targeted lookups",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9299afbba5",
+      "date": "2026-09-28T18:46:51Z",
+      "message": "perf(salary): eliminate staggered framer-motion list timers and remove above-the-fold opacity: 0",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "177f1cda90",
+      "date": "2026-09-28T18:46:33Z",
+      "message": "perf(finance): parallelize ssr data loading, eliminate hydration refetch, and dynamic-load recharts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "5222d3dc50",
+      "date": "2026-09-28T18:34:32Z",
+      "message": "perf(rate-limit): complete split rate limiter across beauty, yacht and remaining security actions",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "72031dfe49",
+      "date": "2026-09-28T17:38:41Z",
+      "message": "perf(ui): remove opacity: 0 on above-the-fold content and parallelize time-records queries",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7257643d33",
+      "date": "2026-09-28T17:38:07Z",
+      "message": "perf(security): eliminate incident form data waterfall via parallel ssr preload",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7ebe6c085d",
+      "date": "2026-09-27T20:25:54Z",
+      "message": "test(e2e): add mobile-safari WebKit project and regression tests for React #441",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "461d5fc648",
+      "date": "2026-09-27T20:25:37Z",
+      "message": "fix(rate-limit): exempt GET /register from global rate limiter for mobile NAT",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4d013727dd",
+      "date": "2026-09-27T20:25:15Z",
+      "message": "feat(telemetry): add error digest logging and helpful guidance for React #441",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "04e14c5b86",
+      "date": "2026-09-27T20:24:48Z",
+      "message": "fix(auth): resolve React 19 uncached promise suspension on auth pages",
+      "author": "Ykr0p"
+    },
     {
       "sha": "e84719eefd",
       "date": "2026-09-27T19:07:08Z",
