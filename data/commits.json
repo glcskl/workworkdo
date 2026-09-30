@@ -1,7 +1,61 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 795,
+  "count": 804,
   "commits": [
+    {
+      "sha": "3a4037d3bc",
+      "date": "2026-09-30T17:21:04Z",
+      "message": "feat(telemetry): add global Next.js instrumentation and detailed Telegram error alerts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "aff3ff8575",
+      "date": "2026-09-30T16:57:32Z",
+      "message": "fix(proxy): safely extract headers from Next.js HeadersAdapter avoiding b.get error",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "351a467a39",
+      "date": "2026-09-30T16:28:09Z",
+      "message": "fix(auth): support polymorphic credentials payload in signInCredentialsAction and bind form action natively",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f0cb2849d2",
+      "date": "2026-09-30T16:16:54Z",
+      "message": "test(e2e): assert no unhandled page errors, check Error Boundary and test stale cookie recovery",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "20ff4f1092",
+      "date": "2026-09-30T16:15:10Z",
+      "message": "fix(auth): resolve React error #441 on /signin, harden session callback and Server Action revalidation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "651785ac7d",
+      "date": "2026-09-30T14:03:51Z",
+      "message": "fix(security,beauty): record payments in PaymentLog, protect InstructionLog on employee delete, remove dead seeds and add Beauty empty states",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9cb9476b8b",
+      "date": "2026-09-30T13:05:17Z",
+      "message": "feat(auth): support password recovery for Google users, honest email check and anti-enumeration limits",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ccf74b3d65",
+      "date": "2026-09-30T13:03:48Z",
+      "message": "security(proxy): unify env-aware client IP extraction and add TRUSTED_PROXY_IPS validation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d9689a0953",
+      "date": "2026-09-30T11:19:10Z",
+      "message": "fix(core): resolve backlog defects for blog traversal, shifts status, beauty nav and email debugging",
+      "author": "Ykr0p"
+    },
     {
       "sha": "d2108473ae",
       "date": "2026-09-29T20:19:19Z",
