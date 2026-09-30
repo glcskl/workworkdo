@@ -1,7 +1,79 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 783,
+  "count": 795,
   "commits": [
+    {
+      "sha": "d2108473ae",
+      "date": "2026-09-29T20:19:19Z",
+      "message": "feat(validation): add runtime Zod validation in Server Actions for security, beauty and yacht",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1481a425ec",
+      "date": "2026-09-29T20:18:47Z",
+      "message": "fix(upload): isolate S3 storage by tenant, enforce 10/min rate limit and add secure download endpoint",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "805872129a",
+      "date": "2026-09-29T19:44:55Z",
+      "message": "fix(contracts): render expiration warning banner, connect files and links sections, remove redundant header",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0f0cb47d49",
+      "date": "2026-09-29T19:17:29Z",
+      "message": "fix(upload): isolate security entity upload routes by tenant vertical",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "88b78c5214",
+      "date": "2026-09-29T19:13:31Z",
+      "message": "refactor(db): unify Kysely tenant client factory and cache (ADR-014)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "400476c938",
+      "date": "2026-09-29T19:04:34Z",
+      "message": "feat(navigation): replace ternary operator with verticalNavRegistry and getNavigationForVertical",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6531cf75d9",
+      "date": "2026-09-29T14:17:49Z",
+      "message": "feat(tenants): derive tenant schema and url regexes dynamically from registry",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6a8c54beda",
+      "date": "2026-09-29T14:03:04Z",
+      "message": "docs(project): explicitly record As-Designed DB enum rationale and non-breaking regex status in ADR-014",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0ab8f394d0",
+      "date": "2026-09-29T13:59:02Z",
+      "message": "docs(project): document vertical scalability architecture audit and ADR-014",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "80cd0518ff",
+      "date": "2026-09-29T11:10:27Z",
+      "message": "docs(perf): add before vs after comparison to degradation check section in PERF_REPORT.md",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1cbade4bd2",
+      "date": "2026-09-29T11:01:06Z",
+      "message": "docs(perf): add archival resolution note to degradation check section in PERF_REPORT.md",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f9c43e011a",
+      "date": "2026-09-29T10:59:53Z",
+      "message": "perf(landing): enable SSG force-static, eliminate LCP delays on pricing and legal pages, offload hero background animations to GPU CSS",
+      "author": "Ykr0p"
+    },
     {
       "sha": "cb67037646",
       "date": "2026-09-29T06:45:44Z",
