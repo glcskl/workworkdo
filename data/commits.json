@@ -1,7 +1,73 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 804,
+  "count": 815,
   "commits": [
+    {
+      "sha": "5a2b64f8c6",
+      "date": "2026-10-01T10:12:11Z",
+      "message": "fix(auth): smooth client-side signout link and suppress no_session error",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7de3629dc2",
+      "date": "2026-10-01T10:08:24Z",
+      "message": "fix(auth): clear session before initiating OAuth and block credentials login to disabled vertical",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b03d4a452d",
+      "date": "2026-10-01T10:03:19Z",
+      "message": "fix(auth): prevent 404 session loop on disabled vertical and add google select_account prompt",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "80c2b8218c",
+      "date": "2026-10-01T09:39:58Z",
+      "message": "perf(security): remove opacity: 0 and y animation on employees header for instant LCP",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c3e670e325",
+      "date": "2026-10-01T09:14:07Z",
+      "message": "perf(dev): add optimizePackageImports and npm run clean script",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a1b0a3ce9b",
+      "date": "2026-09-30T21:22:06Z",
+      "message": "fix(components): unify EmployeeSelect onChange signature to (id, name)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "90a2bd9f11",
+      "date": "2026-09-30T21:05:06Z",
+      "message": "fix(navigation): prevent skeleton freeze during client routing, stop sidebar prefetch storm, cache auth and raise pool timeout",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b4764a830f",
+      "date": "2026-09-30T20:40:37Z",
+      "message": "fix(security): prevent dashboard freeze on skeleton, optimize stats query and match loading layout",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e9dd2e282d",
+      "date": "2026-09-30T20:22:45Z",
+      "message": "feat(security): enforce owner RBAC on anonymization, isolate accounts, and apply person formatter to shifts and timesheets",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6cdeb01e40",
+      "date": "2026-09-30T20:03:03Z",
+      "message": "feat(data-integrity): implement retrospective salaries, Object/Client guards, UI fallback, and anonymization stub",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e6cfbfb88a",
+      "date": "2026-09-30T19:39:20Z",
+      "message": "fix(telegram): read bot credentials dynamically and add test alert script",
+      "author": "Ykr0p"
+    },
     {
       "sha": "3a4037d3bc",
       "date": "2026-09-30T17:21:04Z",
