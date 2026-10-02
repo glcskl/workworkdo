@@ -1,7 +1,37 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 818,
+  "count": 823,
   "commits": [
+    {
+      "sha": "c50ac29d85",
+      "date": "2026-10-01T20:19:54Z",
+      "message": "generated_kysel",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1dc8ac0bde",
+      "date": "2026-10-01T20:15:23Z",
+      "message": "feat(security): implement brigade restore flow and restrict delete to clean drafts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7c50e3ce77",
+      "date": "2026-10-01T19:39:21Z",
+      "message": "feat(security): add immutable brigadeId to Shift with backfill and UI fallback",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d3c2e4a379",
+      "date": "2026-10-01T19:19:33Z",
+      "message": "fix(security): prevent hard delete of disbanded brigades and validate active/future shifts before disbanding",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4373b7468b",
+      "date": "2026-10-01T18:36:43Z",
+      "message": "fix(security): remove vestigial brigade reset in employee form and expand brigade search fields",
+      "author": "Ykr0p"
+    },
     {
       "sha": "55cddb0d53",
       "date": "2026-10-01T18:08:20Z",
