@@ -1,7 +1,127 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 823,
+  "count": 843,
   "commits": [
+    {
+      "sha": "ea2e081173",
+      "date": "2026-10-03T21:05:20Z",
+      "message": "fix(security): resolve maximum update depth error in shift form and apply monochrome styling",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0495c06b0b",
+      "date": "2026-10-03T20:55:01Z",
+      "message": "feat(security): modern shift inspection dialog and day shifts modal for calendar",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8163a073d0",
+      "date": "2026-10-03T20:46:39Z",
+      "message": "fix(security): include all in_progress shifts in brigade disband wizard and resolution",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "64ec1da66a",
+      "date": "2026-10-03T19:41:28Z",
+      "message": "fix(security): prevent deleting brigades with shifts and purge dead recents",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3704fb7791",
+      "date": "2026-10-03T19:11:24Z",
+      "message": "fix(security): sanitize brigadeId and add FK constraint fallback on shift create/update",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c7e4e80306",
+      "date": "2026-10-03T18:18:15Z",
+      "message": "feat(shifts): replace native selects with BrigadeSelect, EmployeeSelect, ObjectSelect, PostSelect, and EquipmentMultiSelect",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e991c96a1f",
+      "date": "2026-10-02T19:29:05Z",
+      "message": "fix(instrumentation): filter premature stream close and use router.refresh over window.reload",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "50f07021a7",
+      "date": "2026-10-02T18:58:51Z",
+      "message": "test(cache): assert getCachedPopular re-executes fetcher when TTL has expired",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d8eeb64021",
+      "date": "2026-10-02T18:52:41Z",
+      "message": "fix(build): decouple popular in-memory cache to service to ensure all Server Actions are strictly async",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "10576bdecc",
+      "date": "2026-10-02T18:42:30Z",
+      "message": "fix(security): secure clearPopularCacheAction from session, optimize LRU prune, and test mutation error guard",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0326d29f00",
+      "date": "2026-10-02T09:03:27Z",
+      "message": "fix(cache): invalidate client and server popular caches upon shift mutations",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2c45657ac2",
+      "date": "2026-10-02T08:56:28Z",
+      "message": "fix(perf): bound server popular cache, isolate client cache by userId, optimize SQL on 100k shifts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "65566bb44c",
+      "date": "2026-10-02T08:44:37Z",
+      "message": "fix(ui): add 5min TTL caching, session loading guard, and zero-data resilience for popular dropdowns",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7a48d8389f",
+      "date": "2026-10-02T08:34:31Z",
+      "message": "feat(ui): add 3 recent and 3 popular items with per-user storage to single and multi dropdowns",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e4f914b245",
+      "date": "2026-10-02T07:38:38Z",
+      "message": "fix(db): prevent indefinite skeleton hang on idle navigation with pool keep-alive, query timeouts and global singletons",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2a68101538",
+      "date": "2026-10-02T06:36:23Z",
+      "message": "docs(backlog): add formatPersonName propagation, contractNumber search, and 15-brigades regression test",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c3cc57f6c8",
+      "date": "2026-10-02T06:32:01Z",
+      "message": "docs(backlog): record Problem 3 completed and Problem 5 employee brigade history spec",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bc3e346307",
+      "date": "2026-10-02T06:27:52Z",
+      "message": "feat(security): show employees and object transfer preview in disband wizard, guard bulk disband",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9c69f1d3e2",
+      "date": "2026-10-02T06:22:43Z",
+      "message": "feat(security): implement disband wizard for brigades with active and future shifts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bebc14626a",
+      "date": "2026-10-02T06:09:03Z",
+      "message": "feat(security): add 'Без бригады' badge to objects and harden active name check on activation",
+      "author": "Ykr0p"
+    },
     {
       "sha": "c50ac29d85",
       "date": "2026-10-01T20:19:54Z",
