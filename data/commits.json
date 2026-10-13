@@ -1,7 +1,13 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 843,
+  "count": 844,
   "commits": [
+    {
+      "sha": "a8736d82a3",
+      "date": "2026-10-09T21:25:36Z",
+      "message": "fix(security): restore standard Select for shift type and status fields",
+      "author": "Ykr0p"
+    },
     {
       "sha": "ea2e081173",
       "date": "2026-10-03T21:05:20Z",
