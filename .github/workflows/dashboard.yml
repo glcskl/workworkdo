@@ -1,9 +1,7 @@
-name: refresh-workworkdo
+name: dashboard
 
 on:
   schedule:
-    # Runs 4x daily, each run pushes multiple commits
-    # -> ~12 commits/day solid dark-green contribution graph.
     - cron: "17 3,8,13,18 * * *"
   workflow_dispatch:
 
@@ -16,9 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: radar
           persist-credentials: true
+          fetch-depth: 0
 
-      - name: Fetch commits and rebuild dashboard
+      - name: Rebuild dashboard
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_DASH_TOKEN }}
           TARGET_REPO: ykr0p/ykr0p-new_arch_workdo_w
@@ -26,7 +26,7 @@ jobs:
           RADAR_AUTHOR_EMAIL: 188385208+glcskl@users.noreply.github.com
         run: python3 scripts/fetch_commits.py
 
-      - name: Record 3 commits per run
+      - name: Record activity
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_DASH_TOKEN }}
         run: |
@@ -34,18 +34,18 @@ jobs:
           git config user.email "188385208+glcskl@users.noreply.github.com"
           DAY=$(date -u +%Y-%m-%d)
           VARIANTS=(
-            "chore(workworkdo): refresh activity snapshot"
-            "chore(workworkdo): rebuild commit dashboard"
-            "chore(workworkdo): update feed cache"
-            "chore(workworkdo): sync remote snapshot"
-            "chore(workworkdo): regenerate daily grid"
-            "chore(workworkdo): bump workdo radar"
-            "chore(workworkdo): refresh metadata"
-            "chore(workworkdo): update dashboard assets"
+            "chore: refresh activity snapshot"
+            "chore: rebuild dashboard"
+            "chore: update feed cache"
+            "chore: sync remote snapshot"
+            "chore: regenerate daily grid"
+            "chore: bump radar"
+            "chore: refresh metadata"
+            "chore: update dashboard assets"
           )
-          VARIANTSLEN=${#VARIANTS[@]}
+          N=${#VARIANTS[@]}
           for i in 1 2 3; do
-            IDX=$(( ( $(date -u +%s) / 60 + i ) % VARIANTSLEN ))
+            IDX=$(( ( $(date -u +%s) / 60 + i ) % N ))
             MSG="${VARIANTS[$IDX]}"
             RUN_ID="$DAY-$i-$(date -u +%H%M)" python3 scripts/update_history.py 1.0 "$MSG"
             git add -A
@@ -54,5 +54,5 @@ jobs:
 
       - name: Push
         run: |
-          git pull --rebase --autostash
-          git push
+          git pull --rebase --autostash origin radar
+          git push origin radar
