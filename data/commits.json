@@ -1,7 +1,199 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 844,
+  "count": 876,
   "commits": [
+    {
+      "sha": "8a6f913f38",
+      "date": "2026-10-19T18:26:58Z",
+      "message": "docs(agents): record the blog admin and its preview pipeline",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1d843fa188",
+      "date": "2026-10-19T18:26:49Z",
+      "message": "feat(blog): edit articles in the admin with a live preview and uploads",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "125bc3e680",
+      "date": "2026-10-19T18:26:24Z",
+      "message": "feat(blog): list, guard and delete articles at /admin/blog",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "602a958f20",
+      "date": "2026-10-19T18:26:00Z",
+      "message": "feat(blog): render the admin preview with the reader's own pipeline",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e1ebf80f97",
+      "date": "2026-10-19T18:25:29Z",
+      "message": "feat(blog): give the admin its own projection of an article row",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "08f2d017b2",
+      "date": "2026-10-19T16:20:35Z",
+      "message": "feat(blog): publish articles from the database instead of MDX in git",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "872fb6072b",
+      "date": "2026-10-19T11:24:05Z",
+      "message": "feat(pricing): echo the landing hero on the combined /pricing",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7157033534",
+      "date": "2026-10-18T20:53:27Z",
+      "message": "feat(pricing): put the ₽ figure first and BYN in parentheses",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "fcca2a45ef",
+      "date": "2026-10-18T17:39:53Z",
+      "message": "docs(agents): record the storefront price, the pricing switch and the nav trail",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "106306c51c",
+      "date": "2026-10-18T17:39:41Z",
+      "message": "feat(pricing): hide a vertical's tariff block on /pricing with its own flag",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "867da24658",
+      "date": "2026-10-18T17:39:24Z",
+      "message": "fix(landing): make «Назад» return to the page the visitor came from",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "542e718d1e",
+      "date": "2026-10-18T17:38:56Z",
+      "message": "feat(landing): show only the storefront \"от\" price on the main landing",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "dad76b5bff",
+      "date": "2026-10-18T15:33:28Z",
+      "message": "docs(agents): record the vertical-flag gating points and the nav contract",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ec8acf41c4",
+      "date": "2026-10-18T15:33:05Z",
+      "message": "chore(env): do not ship the hidden verticals as enabled",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ffcb61114d",
+      "date": "2026-10-18T15:32:42Z",
+      "message": "fix(landing): let flags and the URL decide which vertical is current",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "48a125fda8",
+      "date": "2026-10-18T15:32:22Z",
+      "message": "feat(blog): gate vertical-tagged articles on their vertical flag",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6a9b7fe157",
+      "date": "2026-10-18T15:32:11Z",
+      "message": "fix(registration): refuse an OAuth intent for a switched-off vertical",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "19e1169fd8",
+      "date": "2026-10-18T13:56:54Z",
+      "message": "docs(legal): fix the agreement and the yo in the privacy text",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a0682d9d18",
+      "date": "2026-10-18T13:56:54Z",
+      "message": "copy(landing): drop the leftover \"SaaS Platform\" token from the marquees",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ac5d949078",
+      "date": "2026-10-18T13:33:11Z",
+      "message": "chore(legal): say \"система WorkDo\" in the offer, terms and privacy texts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f5cbfba52d",
+      "date": "2026-10-18T13:32:38Z",
+      "message": "fix(contacts): correct the truncated +375 tel href and list the second phone",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "d9c3334146",
+      "date": "2026-10-18T13:32:37Z",
+      "message": "copy(faq): two new categories and claims we can actually honour",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "8c299ed6d6",
+      "date": "2026-10-18T13:32:10Z",
+      "message": "copy(marketing): call it a system, not a platform, across the public pages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "4af4ee0d45",
+      "date": "2026-10-18T13:32:10Z",
+      "message": "docs(landing): rewrite the features, advantages and trust catalog",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "0f3bf270e5",
+      "date": "2026-10-18T13:31:45Z",
+      "message": "feat(about): team section with 192x192 white-flattened avatars",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3dfb593baa",
+      "date": "2026-10-18T13:31:26Z",
+      "message": "feat(landing): rebuild the main landing from the approved copy",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f6babad35a",
+      "date": "2026-10-18T13:31:07Z",
+      "message": "feat(landing): cursor-following gradient headings",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "2ff45a8b27",
+      "date": "2026-10-18T13:30:47Z",
+      "message": "feat(blog): add three articles and accept the string form of Stats",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bac1bbdb38",
+      "date": "2026-10-18T13:30:13Z",
+      "message": "fix(pricing): gate verticals on the server and add a BYN/RUB/USD display toggle",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "bd838faef7",
+      "date": "2026-10-18T13:29:50Z",
+      "message": "refactor(landing): present scenarios instead of case studies",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1cdadc7ead",
+      "date": "2026-10-18T13:29:31Z",
+      "message": "refactor(landing): make the vertical content data honest",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "df7e24d28b",
+      "date": "2026-10-18T13:29:01Z",
+      "message": "chore(tools): ignore every .next-* build dir and exclude it from ESLint",
+      "author": "Ykr0p"
+    },
     {
       "sha": "a8736d82a3",
       "date": "2026-10-09T21:25:36Z",
