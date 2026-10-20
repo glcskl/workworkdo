@@ -1,7 +1,31 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 877,
+  "count": 881,
   "commits": [
+    {
+      "sha": "749933adb2",
+      "date": "2026-10-20T20:56:41Z",
+      "message": "docs(agents): record the one-file-per-mark icon rule",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "3e696be2eb",
+      "date": "2026-10-20T20:56:41Z",
+      "message": "fix(a11y): stop reading the founders' names twice on /about",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6aa7004e92",
+      "date": "2026-10-20T20:56:34Z",
+      "message": "fix(pwa): point the manifest at logo-v3 and drop the duplicate icon",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "17af2fd521",
+      "date": "2026-10-20T20:56:23Z",
+      "message": "fix(brand): ship the 512 mark transparent and pack the white plate into the archive",
+      "author": "Ykr0p"
+    },
     {
       "sha": "7346e6c53c",
       "date": "2026-10-20T07:56:20Z",
