@@ -314,3 +314,4 @@ timestamp,message
 2026-10-21T18:02:02.118258+00:00,chore: bump radar
 2026-10-21T21:42:35.137277+00:00,chore: update dashboard assets
 2026-10-21T21:42:35.171080+00:00,chore: refresh activity snapshot
+2026-10-21T21:42:35.205484+00:00,chore: rebuild dashboard
