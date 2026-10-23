@@ -1,7 +1,31 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 881,
+  "count": 885,
   "commits": [
+    {
+      "sha": "aba047a159",
+      "date": "2026-10-23T08:18:05Z",
+      "message": "test(e2e): stabilize the multi-business switching spec",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f80a0a4467",
+      "date": "2026-10-23T08:17:59Z",
+      "message": "fix(auth): keep the email after a failed sign-in",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "89c01fb612",
+      "date": "2026-10-23T08:17:53Z",
+      "message": "fix(routing): redirect /index and /index.html to /",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "86a493d375",
+      "date": "2026-10-23T08:17:48Z",
+      "message": "chore(deps): bump next 16.3.6 → 16.3.8",
+      "author": "Ykr0p"
+    },
     {
       "sha": "749933adb2",
       "date": "2026-10-20T20:56:41Z",
