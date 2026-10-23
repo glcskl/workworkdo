@@ -331,3 +331,4 @@ timestamp,message
 2026-10-23T17:53:04.453793+00:00,chore: sync remote snapshot
 2026-10-23T17:53:04.479871+00:00,chore: regenerate daily grid
 2026-10-23T21:24:20.445651+00:00,chore: bump radar
+2026-10-23T21:24:20.466286+00:00,chore: refresh metadata
