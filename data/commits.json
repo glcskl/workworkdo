@@ -1,7 +1,25 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 886,
+  "count": 889,
   "commits": [
+    {
+      "sha": "74c26132e0",
+      "date": "2026-10-31T20:48:42Z",
+      "message": "feat(blog): add SEO metadata, TL;DR, FAQ and the editorial page",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c1f25868d6",
+      "date": "2026-10-31T20:48:32Z",
+      "message": "feat(admin): preview and clear the cover, explain inline images",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "73d321a3e0",
+      "date": "2026-10-31T20:48:27Z",
+      "message": "feat(blog): categorize articles and rebuild /blog around topics",
+      "author": "Ykr0p"
+    },
     {
       "sha": "8a616c962c",
       "date": "2026-10-23T12:29:19Z",
