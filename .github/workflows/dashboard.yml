@@ -1,0 +1,59 @@
+name: dashboard
+
+on:
+  schedule:
+    - cron: "17 3,8,13,18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: dashboard
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Rebuild dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_DASH_TOKEN }}
+          TARGET_REPO: ${{ vars.DASH_TARGET_REPO || 'ykr0p/ykr0p-new_arch_workdo_w' }}
+        run: python3 scripts/fetch_commits.py
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "glcskl"
+          git config user.email "188385208+glcskl@users.noreply.github.com"
+          git add data/commits.json
+          if git diff --cached --quiet; then
+            echo "snapshot unchanged"
+            exit 0
+          fi
+          git commit -q -m "chore(data): refresh snapshot $(date -u +%F)"
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+
+      - name: Upload dashboard artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: refresh
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
