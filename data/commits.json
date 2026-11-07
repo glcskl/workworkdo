@@ -1,7 +1,25 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 889,
+  "count": 892,
   "commits": [
+    {
+      "sha": "08684e2320",
+      "date": "2026-11-07T18:57:04Z",
+      "message": "feat(admin): add forgot-password shortcut to ops login form",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "1cc14ceda9",
+      "date": "2026-11-07T18:24:53Z",
+      "message": "feat(admin): isolate admin panel on ops subdomain with zero-trust auth, team management UI, and CLI scripts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c94895d645",
+      "date": "2026-11-07T18:24:41Z",
+      "message": "docs: add admin subdomain zero-trust and multiregion sharding plans",
+      "author": "Ykr0p"
+    },
     {
       "sha": "74c26132e0",
       "date": "2026-10-31T20:48:42Z",
