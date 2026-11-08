@@ -1,7 +1,115 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 894,
+  "count": 912,
   "commits": [
+    {
+      "sha": "37444d23a1",
+      "date": "2026-11-08T15:58:20Z",
+      "message": "feat(admin): implement system health monitoring dashboard and error export",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "e6149b77cf",
+      "date": "2026-11-08T15:58:09Z",
+      "message": "feat(system): add log retention cleanup cron and CLI script",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "60d2feed5b",
+      "date": "2026-11-08T15:58:05Z",
+      "message": "feat(system): implement error clustering, PII sanitizer and batching service",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "756d85c08f",
+      "date": "2026-11-08T15:58:00Z",
+      "message": "feat(system): add SystemErrorLog model and database migration",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f5d96cf2a1",
+      "date": "2026-11-08T15:57:56Z",
+      "message": "fix(tests): align blog admin list filter mock with BlogRow type",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "a240bb4c54",
+      "date": "2026-11-08T15:06:04Z",
+      "message": "feat(admin): add search, filters and compact icon actions to blog posts list",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "02e151294e",
+      "date": "2026-11-08T15:05:45Z",
+      "message": "fix(blog): auto-normalize .r2.de domain typo and adjust card aspect ratio to 16:9",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "c72800e114",
+      "date": "2026-11-08T13:10:41Z",
+      "message": "feat(blog): dynamic blog topics management and fix admin table layout",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "89f1902e20",
+      "date": "2026-11-08T13:10:12Z",
+      "message": "feat(blog): support markdown alerts callouts in post body",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "7372ee905f",
+      "date": "2026-11-08T11:20:55Z",
+      "message": "fix(admin): prevent sidebar leak on unauthenticated state and accelerate superadmin eviction",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "6cc0d6b309",
+      "date": "2026-11-08T11:06:37Z",
+      "message": "style(admin): eliminate blog table horizontal scroll and unify box layout in comments moderation",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "ad05dac477",
+      "date": "2026-11-08T11:06:24Z",
+      "message": "feat(admin): require typed confirmation for superadmin role changes and align team management UI",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "797089b6b6",
+      "date": "2026-11-08T11:06:06Z",
+      "message": "feat(admin): enforce instant 0s superadmin revocation and active session eviction",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "b6bef0cda6",
+      "date": "2026-11-08T11:05:50Z",
+      "message": "feat(auth): add Google and GitHub brand icons to OAuth sign-in and register buttons",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "9ba912e3a1",
+      "date": "2026-11-08T10:27:36Z",
+      "message": "test(blog): fix AdminBlogPostDraft mock types in draft autosave unit test",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "96ec331774",
+      "date": "2026-11-08T10:21:47Z",
+      "message": "feat(blog): add client-side autosave and recovery for new article drafts",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "f8c38374ec",
+      "date": "2026-11-08T10:21:29Z",
+      "message": "feat(admin): require written confirmation and Cloudflare Zero Trust notice for granting superadmin",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "47c573439c",
+      "date": "2026-11-08T10:21:11Z",
+      "message": "feat(admin): add persistent left sidebar shell and fluid layout without horizontal scroll",
+      "author": "Ykr0p"
+    },
     {
       "sha": "5343ba9e64",
       "date": "2026-11-07T20:56:49Z",
