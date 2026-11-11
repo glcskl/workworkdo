@@ -1,7 +1,25 @@
 {
   "source": "ykr0p/ykr0p-new_arch_workdo_w",
-  "count": 912,
+  "count": 915,
   "commits": [
+    {
+      "sha": "4a884ba238",
+      "date": "2026-11-11T13:49:07Z",
+      "message": "perf: lazy load heavy dependencies (xlsx, rehype-pretty-code)",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "af38c64ac2",
+      "date": "2026-11-11T13:48:56Z",
+      "message": "perf(landing): enforce static prerendering and edge delivery for marketing pages",
+      "author": "Ykr0p"
+    },
+    {
+      "sha": "53007da478",
+      "date": "2026-11-11T13:48:52Z",
+      "message": "build: exclude unused native binaries and dev tooling from vercel nft bundles",
+      "author": "Ykr0p"
+    },
     {
       "sha": "37444d23a1",
       "date": "2026-11-08T15:58:20Z",
